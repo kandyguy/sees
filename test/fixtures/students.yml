@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  first_name: MyString
+  last_name: MyString
+  date_of_birth: 2012-07-17
+  parent_name: MyString
+  parent_phone: MyString
+  parent_mobile: MyString
+  uac_number: MyString
+  email: MyString
+  confirm_email: MyString
+  mobile: MyString
+  phone: MyString
+  address1: MyString
+  address2: MyString
+  suburb: MyString
+  state_id: MyString
+  post_code: MyString
+  school_id: 1
+  faculty: 1
+  course: 1
+  note1: MyString
+  note2: MyString
+  note3: MyString
+  declaration1: MyString
+  declaration2: MyString
+  declaration3: MyString
+  declaration4: MyString
+  completed: false
+
+two:
+  title: MyString
+  first_name: MyString
+  last_name: MyString
+  date_of_birth: 2012-07-17
+  parent_name: MyString
+  parent_phone: MyString
+  parent_mobile: MyString
+  uac_number: MyString
+  email: MyString
+  confirm_email: MyString
+  mobile: MyString
+  phone: MyString
+  address1: MyString
+  address2: MyString
+  suburb: MyString
+  state_id: MyString
+  post_code: MyString
+  school_id: 1
+  faculty: 1
+  course: 1
+  note1: MyString
+  note2: MyString
+  note3: MyString
+  declaration1: MyString
+  declaration2: MyString
+  declaration3: MyString
+  declaration4: MyString
+  completed: false

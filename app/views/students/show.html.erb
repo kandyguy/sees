@@ -1,0 +1,148 @@
+<p id="notice"><%= notice %></p>
+<p>
+	<b>User:</b>
+	<%= @student.try(:user).try(:email) %>
+</p>
+<p>
+  <b>Title:</b>
+  <%= @student.title %>
+</p>
+
+<p>
+  <b>First name:</b>
+  <%= @student.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @student.last_name %>
+</p>
+
+<p>
+  <b>Date of birth:</b>
+  <%= @student.date_of_birth %>
+</p>
+
+<p>
+  <b>Parent name:</b>
+  <%= @student.parent_name %>
+</p>
+
+<p>
+  <b>Parent phone:</b>
+  <%= @student.parent_phone %>
+</p>
+
+<p>
+  <b>Parent mobile:</b>
+  <%= @student.parent_mobile %>
+</p>
+
+<p>
+  <b>Uac number:</b>
+  <%= @student.uac_number %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @student.email %>
+</p>
+
+<p>
+  <b>Confirm email:</b>
+  <%= @student.confirm_email %>
+</p>
+
+<p>
+  <b>Mobile:</b>
+  <%= @student.mobile %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @student.phone %>
+</p>
+
+<p>
+  <b>Address1:</b>
+  <%= @student.address1 %>
+</p>
+
+<p>
+  <b>Address2:</b>
+  <%= @student.address2 %>
+</p>
+
+<p>
+  <b>Suburb:</b>
+  <%= @student.suburb %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @student.try(:state).try(:name) %>
+</p>
+
+<p>
+  <b>Post code:</b>
+  <%= @student.post_code %>
+</p>
+
+<p>
+  <b>School:</b>
+  <%= @student.try(:school).try(:name) %>
+</p>
+
+<p>
+  <b>Faculty:</b>
+  <%= @student.try(:faculty).try(:name) %>
+</p>
+
+<p>
+  <b>Course:</b>
+  <%= @student.try(:course).try(:name) %>
+</p>
+
+<p>
+  <b>Note1:</b>
+  <%= @student.note1 %>
+</p>
+
+<p>
+  <b>Note2:</b>
+  <%= @student.note2 %>
+</p>
+
+<p>
+  <b>Note3:</b>
+  <%= @student.note3 %>
+</p>
+
+<p>
+  <b>Declaration1:</b>
+  <%= @student.declaration1 %>
+</p>
+
+<p>
+  <b>Declaration2:</b>
+  <%= @student.declaration2 %>
+</p>
+
+<p>
+  <b>Declaration3:</b>
+  <%= @student.declaration3 %>
+</p>
+
+<p>
+  <b>Declaration4:</b>
+  <%= @student.declaration4 %>
+</p>
+
+<p>
+  <b>Completed:</b>
+  <%= @student.completed %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>
