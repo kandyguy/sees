@@ -5,11 +5,14 @@ class Student < ActiveRecord::Base
                   :parent_mobile, :parent_name, :parent_phone, :phone, :post_code, :school_id, :state_id, 
                   :suburb, :title, :uac_number, :user_id
   
-  attr_accessible :login_email, :password, :password_confirmation
-  attr_accessor :login_email, :password, :password_confirmation
+  attr_accessible :login_email, :password, :password_confirmation, :email_confirmation
+  attr_accessor :login_email, :password, :password_confirmation, :email_confirmation
                   
   belongs_to :user
   validates_associated :user   
+  validates :email, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i}, :allow_blank => true
+  validates :email_confirmation, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i}, :allow_blank => Proc.new { |a| a.email.blank?} 
+  validates_confirmation_of :email
   
   belongs_to :state
   belongs_to :school
@@ -22,18 +25,41 @@ class Student < ActiveRecord::Base
   
   before_create :update_user
   
+  has_many :student_files
+  
+  scope :submitted_applications, lambda {
+    {:conditions => {:completed => true}}
+  }
   
   def new_user_login
-    u = User.new(:email => login_email, :password => password, :password_confirmation => password_confirmation)
-    u.valid?
-    u.errors.full_messages.each do |msg|
-      errors.add(:base, msg)  
+    if self.new_record?
+      u = User.new(:email => login_email, :password => password, :password_confirmation => password_confirmation)
+      u.valid?
+      u.errors.full_messages.each do |msg|
+        errors.add(:base, msg)  
+      end
     end
   end
   
   def update_user
     u = User.create(:email => login_email, :password => password, :password_confirmation => password_confirmation)
     self.user_id = u.id
+  end
+  
+  def self.number_of_files
+    5
+  end
+  
+  def vaidate_required_field?
+   !((title.blank?) || (first_name.blank?) || (last_name.blank?) || (date_of_birth.blank?) || (email.blank?) || (parent_name.blank?) || (suburb.blank?))
+  end
+  
+  def complete
+    update_attribute("completed", true)
+  end
+  
+  def full_name
+    "#{last_name}, #{first_name}"
   end
   
 end

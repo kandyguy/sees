@@ -1,5 +1,6 @@
+require 'fileutils'
 class StudentsController < ApplicationController
-  before_filter :authenticate_user!, :except => [:new, :create]
+  before_filter :authenticate_user!, :except => [:new, :create, :submit]
   # GET /students
   # GET /students.json
   def index
@@ -26,11 +27,6 @@ class StudentsController < ApplicationController
   # GET /students/new.json
   def new
     @student = Student.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render :json => @student }
-    end
   end
 
   # GET /students/1/edit
@@ -41,17 +37,26 @@ class StudentsController < ApplicationController
   # POST /students
   # POST /students.json
   def create
-    @student = Student.new(params[:student])
-
-    respond_to do |format|
+    if verify_recaptcha
+      @student = Student.new(params[:student])
       if @student.save
-        format.html { redirect_to @student, :notice => 'Student was successfully created.' }
-        format.json { render :json => @student, :status => :created, :location => @student }
+        3.times do |i|
+          unless params["file"]["#{i}"].nil?
+            tmp = params["file"]["#{i}"].tempfile
+            file_name = params["file"]["#{i}"].original_filename
+            file = File.join("public/data", "#{file_name}#{@student.id}")
+            StudentFile.create(:name => "#{file_name}#{@student.id}", :student_id => @student.id)
+            FileUtils.cp tmp.path, file
+          end  
+        end
+        @student.complete if @student.vaidate_required_field?
+        redirect_to student_path(@student) 
       else
-        format.html { render :action => "new" }
-        format.json { render :json => @student.errors, :status => :unprocessable_entity }
+        render :action => "new" 
       end
-    end
+    else
+      redirect_to new_student_path, :alert => 'Invalid captcha' 
+    end  
   end
 
   # PUT /students/1
@@ -61,8 +66,8 @@ class StudentsController < ApplicationController
 
     respond_to do |format|
       if @student.update_attributes(params[:student])
+        @student.complete if @student.vaidate_required_field?
         format.html { redirect_to @student, :notice => 'Student was successfully updated.' }
-        format.json { head :no_content }
       else
         format.html { render :action => "edit" }
         format.json { render :json => @student.errors, :status => :unprocessable_entity }
@@ -81,4 +86,9 @@ class StudentsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def submit
+    p "hoooooooo hoooooooooooooo"
+  end
+  
 end

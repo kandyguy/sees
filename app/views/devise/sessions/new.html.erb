@@ -1,17 +1,22 @@
-<h2>Sign in</h2>
+<div id="login_desc">
+	Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.
+	Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.
+	Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.
+	<%= link_to "CREATE NEW APPLICATION", new_student_path, :class => 'btn_new_student' %>
+</div>
+<div id="login">
+		<h3>Update Existing Application</h3>	
+		<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+		  <div><%= f.label :email %><br />
+		  <%= f.email_field :email %></div>
+		
+		  <div><%= f.label :password %><br />
+		  <%= f.password_field :password %></div>
+		  <div><%= f.submit "Sign in", :class => "sign_in" %>
+		  	<%= render :partial => "devise/shared/links" %>
+		  </div>
+		<% end %>
+		
+				
+</div>
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
-
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
-
-  <div><%= f.submit "Sign in" %></div>
-<% end %>
-
-<%= render :partial => "devise/shared/links" %>

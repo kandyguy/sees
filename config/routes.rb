@@ -1,5 +1,11 @@
 Sees::Application.routes.draw do
-  resources :students
+  resources :comments
+
+  resources :students do
+    member do
+      post 'submit'
+    end
+  end
 
   get "home/index"
 

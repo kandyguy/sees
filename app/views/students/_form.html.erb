@@ -1,139 +1,271 @@
-<%= form_for(@student) do |f| %>
-  <% if @student.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
-
-      <ul>
-      <% @student.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= select(:student, :title, [['Mr', 'mr'], ['Mrs', 'mrs']], {}, :class => "myclass") %>
-  </div>
-  <div class="field">
-    <%= f.label :first_name %><br />
-    <%= f.text_field :first_name %>
-  </div>
-  <div class="field">
-    <%= f.label :last_name %><br />
-    <%= f.text_field :last_name %>
-  </div>
-  <div class="field">
-    <%= f.label :date_of_birth %><br />
-    <%= f.date_select :date_of_birth %>
-  </div>
-  <div class="field">
-    <%= f.label :parent_name %><br />
-    <%= f.text_field :parent_name %>
-  </div>
-  <div class="field">
-    <%= f.label :parent_phone %><br />
-    <%= f.text_field :parent_phone %>
-  </div>
-  <div class="field">
-    <%= f.label :parent_mobile %><br />
-    <%= f.text_field :parent_mobile %>
-  </div>
-  <div class="field">
-    <%= f.label :uac_number %><br />
-    <%= f.text_field :uac_number %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :confirm_email %><br />
-    <%= f.text_field :confirm_email %>
-  </div>
-  <div class="field">
-    <%= f.label :mobile %><br />
-    <%= f.text_field :mobile %>
-  </div>
-  <div class="field">
-    <%= f.label :phone %><br />
-    <%= f.text_field :phone %>
-  </div>
-  <div class="field">
-    <%= f.label :address1 %><br />
-    <%= f.text_field :address1 %>
-  </div>
-  <div class="field">
-    <%= f.label :address2 %><br />
-    <%= f.text_field :address2 %>
-  </div>
-  <div class="field">
-    <%= f.label :suburb %><br />
-    <%= f.text_field :suburb %>
-  </div>
-  <div class="field">
-    <%= f.label :state_id %><br />
-    <%= f.collection_select :state_id, State.all, :id, :name %>
-  </div>
-  <div class="field">
-    <%= f.label :post_code %><br />
-    <%= f.text_field :post_code %>
-  </div>
+<%= form_for(@student, :html => {:multipart => true})  do |f| %>
+<table>
+  <tr>
+  	<td colspan="2">
+  		<% if @student.errors.any? %>
+	    <div id="error_explanation">
+	      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
+	
+	      <ul>
+	      <% @student.errors.full_messages.each do |msg| %>
+	        <li><%= msg %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+	  <% end %>		
+  	</td>
+  </tr>
+  <tr>
+  	<td colspan="2">
+  		<div class="student_header">
+  			Student Details
+  		</div>
+  	</td>
+  </tr>
+  <tr>
+  	<td>
+  		Title :
+    	<%= select(:student, :title, [['Mr', 'mr'], ['Mrs', 'mrs']], {}, :class => "span1") %>
+  	</td>
+  	<td>
+  		<%= f.label :parent_name %>
+    	<%= f.text_field :parent_name %>
+  	</td>
+  </tr>
+  <tr>
+  	<td>
+  		<%= f.label :first_name %>
+    	<%= f.text_field :first_name %>
+  	</td>
+  	<td>
+  		<%= f.label :parent_phone %>
+    	<%= f.text_field :parent_phone %>
+  	</td>
+  </tr>
+  <tr>
+  	<td>
+  		<%= f.label :last_name %>
+    	<%= f.text_field :last_name %>
+  	</td>
+  	<td>
+  		<%= f.label :parent_mobile %>
+    	<%= f.text_field :parent_mobile %>
+  	</td>
+  </tr>
+  <tr>
+  	<td>
+  		<%= f.label :date_of_birth %>
+    	<%= f.date_select :date_of_birth %>
+  	</td>
+  	<td>
+  		<%= f.label :uac_number %><br />
+    	<%= f.text_field :uac_number %>
+  	</td>
+  </tr>
+  <tr>
+  	<td colspan="2">
+  		<div class="student_header">
+  			Contact Details
+  		</div>
+  	</td>
+  </tr>
+  <tr>
+  	<td>
+  		<%= f.label :email %>
+    	<%= f.text_field :email %>
+  	</td>
+  	<td>
+  		<%= f.label :address1 %>
+    	<%= f.text_field :address1 %>
+  	</td>
+  </tr>
+  <tr>
+  	<td>
+  		<%= f.label :email_confirmation %>
+    	<%= f.text_field :email_confirmation %>
+  	</td>
+  	<td>
+  		<%= f.label :address2 %>
+    	<%= f.text_field :address2 %>
+  	</td>
+  </tr>
+  <tr>
+  	<td>
+  		<%= f.label :mobile %>
+    	<%= f.text_field :mobile %>
+  	</td>
+  	<td>
+  		<%= f.label :suburb %>
+    	<%= f.text_field :suburb %>
+  	</td>
+  </tr>
+  <tr>
+  	<td>
+  		<%= f.label :phone %>
+    	<%= f.text_field :phone %>
+  	</td>
+  	<td>
+  		<%= f.label :state_id %>
+    	<%= f.collection_select :state_id, State.all, :id, :name %>
+  	</td>
+  </tr>
+  <tr>
+  	<td></td>
+  	<td>
+  		<%= f.label :post_code %>
+    	<%= f.text_field :post_code %>
+  	</td>
+  </tr>
   <% if @student.new_record? %>
-  <div class="field">
-    <%= f.label :login_email %><br />
-    <%= f.text_field :login_email %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
+  <tr>
+  	<td colspan="2">
+  		<div class="student_header">
+  			User Credentials
+  		</div>
+  	</td>
+  </tr>
+  <tr>
+  	<td>
+  		<%= f.label :login_email %>
+    	<%= f.text_field :login_email %>
+  	</td>
+  	<td></td>
+  </tr>
+  <tr>
+  	<td>
+  		<%= f.label :password %>
+    	<%= f.password_field :password %>
+  	</td>
+  	<td></td>
+  </tr>
+  <tr>
+  	<td>
+  		<%= f.label :password_confirmation %>
+    	<%= f.password_field :password_confirmation %>
+  	</td>
+  	<td></td>
+  </tr>
   <% end %>
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
-  </div>
-  <div class="field">
-    <%= f.label :school_id %><br />
-    <%= f.collection_select :school_id, School.all, :id, :name %>
-  </div>
-  <div class="field">
-    <%= f.label :faculty_id %><br />
-    <%= f.collection_select :faculty_id, Faculty.all, :id, :name %>
-  </div>
-  <div class="field">
-    <%= f.label :course_id %><br />
-    <%= f.collection_select :course_id, Course.all, :id, :name %>
-  </div>
-  <div class="field">
-    <%= f.label :note1 %><br />
-    <%= f.text_field :note1 %>
-  </div>
-  <div class="field">
-    <%= f.label :note2 %><br />
-    <%= f.text_field :note2 %>
-  </div>
-  <div class="field">
-    <%= f.label :note3 %><br />
-    <%= f.text_field :note3 %>
-  </div>
-  <div class="field">
-    <%= f.label :declaration1 %><br />
-    <%= f.check_box :declaration1 %>
-  </div>
-  <div class="field">
-    <%= f.label :declaration2 %><br />
-    <%= f.check_box :declaration2 %>
-  </div>
-  <div class="field">
-    <%= f.label :declaration3 %><br />
-    <%= f.check_box :declaration3 %>
-  </div>
-  <div class="field">
-    <%= f.label :declaration4 %><br />
-    <%= f.check_box :declaration4 %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <tr>
+  	<td colspan="2">
+  		<div class="student_header">
+  			Application Details
+  		</div>
+  	</td>
+  </tr>
+  <tr>
+  	<td>
+  		<%= f.label :school_id %>
+    	<%= f.collection_select :school_id, School.all, :id, :name %>
+  	</td>
+  	<td></td>
+  </tr>
+  <tr>
+  	<td>
+  		<%= f.label :faculty_id %>
+    	<%= f.collection_select :faculty_id, Faculty.all, :id, :name %>
+  	</td>
+  	<td></td>
+  </tr>
+  <tr>
+  	<td>
+  		<%= f.label :course_id %>
+    	<%= f.collection_select :course_id, Course.all, :id, :name %>
+  	</td>
+  	<td></td>
+  </tr>
+  <tr>
+  	<td colspan="2">
+  		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  		<br />
+  		<%= f.text_area :note1, :class => "note" %>
+  	</td>
+  </tr>
+  <tr>
+  	<td colspan="2">
+  		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  		<br />
+  		<%= f.text_area :note2, :class => "note" %>
+  	</td>
+  </tr>
+  <tr>
+  	<td colspan="2">
+  		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  		<br />
+  		<%= f.text_area :note3, :class => "note" %>
+  	</td>
+  </tr>
+  <tr>
+  	<td colspan="2">
+  		<div class="student_header">
+  			Attachment Details
+  		</div>
+  	</td>
+  </tr>
+  <tr>
+  	<td>
+  	  <% if @student.new_record? %>
+  	  	  <% Student.number_of_files.to_i.times do |i| %>
+	  	 	<%= file_field "file", "#{i}" %><br />
+	  	  <% end %>
+  	  <% else 
+  	  	 count = 0 
+  	  %>
+  	  	
+  	  	<% @student.student_files.each do |file| %>
+  	  		<%= link_to file.name, '' %><br />
+  	  		
+  	  	<% 
+  	  		count += 1
+  	  		end 
+  	  	%>
+  	  	<% (Student.number_of_files.to_i - count).times do |i| %>
+	  	 	<%= file_field "file", "#{i}" %><br />
+	  	<% end %>
+  	  <% end %>			
+  	</td>
+  	<td></td>
+  </tr>
+  <tr>
+  	<td colspan="2">
+  		<table>
+  			<tr>
+  				<td>
+  					<%= f.check_box :declaration1 %>
+  					Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+  					<br />
+  					<%= f.check_box :declaration2 %>
+  					Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+  					<br />
+  					<%= f.check_box :declaration3 %>
+  					Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+  					<br />
+  					<%= f.check_box :declaration4 %>
+  					Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+  				</td>
+  			</tr>
+  			<tr>
+  				<td>
+  					Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+  				</td>
+  			</tr>
+  			<tr>
+  				<td>
+  					<% if @student.new_record? %>
+  						<%= recaptcha_tags %>
+  					<% end %>
+  				</td>
+  			</tr>
+  		</table>
+  	</td>
+  </tr>
+  <tr>
+  	<td></td>
+  	<td>
+  		<%= f.submit "Save", :class => "save_btn" %>
+  		<%= f.submit "Submit", :class => "save_btn" %>
+  	</td>
+  </tr>
+</table>
 <% end %>
+

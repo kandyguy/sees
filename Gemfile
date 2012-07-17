@@ -41,6 +41,10 @@ gem 'ruby-debug'
 #authentication
 gem 'devise'
 
+
 #layout
 gem "twitter-bootstrap-rails"
 
+
+#file upload
+gem 'paperclip'
