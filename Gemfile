@@ -36,7 +36,7 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'ruby-debug'
+# gem 'ruby-debug'
 
 #authentication
 gem 'devise'

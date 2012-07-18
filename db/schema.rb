@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -12,6 +13,25 @@
 
 ActiveRecord::Schema.define(:version => 20120717110242) do
 
+  create_table "answers", :force => true do |t|
+    t.string   "answer_text"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "categories", :force => true do |t|
+    t.string   "category_name"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "comments", :force => true do |t|
+    t.integer  "student_id"
+    t.text     "comment_text"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
   create_table "courses", :force => true do |t|
     t.string  "name"
     t.integer "faculty_id"
@@ -20,6 +40,13 @@ ActiveRecord::Schema.define(:version => 20120717110242) do
   create_table "faculties", :force => true do |t|
     t.string  "name"
     t.integer "school_id"
+  end
+
+  create_table "questions", :force => true do |t|
+    t.integer  "category_id"
+    t.string   "question_text"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "schools", :force => true do |t|
