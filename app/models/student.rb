@@ -47,7 +47,7 @@ class Student < ActiveRecord::Base
   end
   
   def self.number_of_files
-    5
+    3
   end
   
   def vaidate_required_field?
