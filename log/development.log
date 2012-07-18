@@ -40516,3 +40516,3189 @@ Served asset /feedbacks.js - 304 Not Modified (0ms)
 
 Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 18:38:06 +0530
 Served asset /featured-links.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 19:23:25 +0530
+Processing by StudentsController#new as HTML
+  [1m[36mState Load (0.1ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (99.8ms)
+  Rendered students/new.html.erb within layouts/application (127.5ms)
+Completed 200 OK in 533ms (Views: 297.8ms | ActiveRecord: 66.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:23:25 +0530
+Served asset /screen.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:23:25 +0530
+Served asset /screen-local.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:23:25 +0530
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:23:25 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:23:25 +0530
+Served asset /feedbacks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:23:25 +0530
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:23:25 +0530
+Served asset /featured-links.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:23:26 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (2ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 19:25:19 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WKQx6EXyJESWaU7gJy5b5W99HaWaKGtguCPBCQIiBRM=", "student"=>{"title"=>"mr", "first_name"=>"a", "last_name"=>"a", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"a", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"", "email_confirmation"=>"", "mobile"=>"", "phone"=>"", "address1"=>"a", "address2"=>"", "suburb"=>"a", "state_id"=>"1", "post_code"=>"", "login_email"=>"sameera@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "file"=>{"0"=>#<ActionDispatch::Http::UploadedFile:0x007f1df05269e8 @original_filename="admin_portal.ods", @content_type="application/vnd.oasis.opendocument.spreadsheet", @headers="Content-Disposition: form-data; name=\"file[0]\"; filename=\"admin_portal.ods\"\r\nContent-Type: application/vnd.oasis.opendocument.spreadsheet\r\n", @tempfile=#<File:/tmp/RackMultipart20120718-15966-532knh>>}, "recaptcha_challenge_field"=>"03AHJ_VutBTyFeuphk50Lo-is0U-kjCM_V2EFt9MIBupE7l8t3tFQlJNX46w22Fh05O22GvJguLhjc7-MHa_pw8vD4DALqxZQFNvoOMEdjN9L-5y7RZYhrOzGQcE5NzDKIshfq9eJfbwROyTONBOxzKuEx292HX2f4PA", "recaptcha_response_field"=>"otCarde connected", "commit"=>"Save"}
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 3004ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 19:25:22 +0530
+Processing by StudentsController#new as HTML
+  [1m[35mState Load (0.2ms)[0m  SELECT "states".* FROM "states" 
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools" [0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered students/_form.html.erb (12.4ms)
+  Rendered students/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:25:22 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:25:22 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:25:22 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:25:22 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:25:22 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:25:22 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:25:22 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:25:22 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 19:27:52 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WKQx6EXyJESWaU7gJy5b5W99HaWaKGtguCPBCQIiBRM=", "student"=>{"title"=>"mr", "first_name"=>"", "last_name"=>"", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"", "email_confirmation"=>"", "mobile"=>"", "phone"=>"", "address1"=>"", "address2"=>"", "suburb"=>"", "state_id"=>"1", "post_code"=>"", "login_email"=>"morgans987@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "recaptcha_challenge_field"=>"03AHJ_VuswqnKuhwPTvXAeWNGkZafNBbtiZ33I6POMvHLZVNWdP5YEsm6H1ovsdX4kMIr2AFMVF_Oc3VlrbxJFH-hgLI9ZH01w-pW5HWoxScE2wHzu-rW35kIml7vedlGTdMQldUGjfh_ltppcfNuCr40oHuDOo05JLw", "recaptcha_response_field"=>"and uldryri", "commit"=>"Save"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'morgans987@hotmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mState Load (0.1ms)[0m  SELECT "states".* FROM "states" 
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools" [0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered students/_form.html.erb (111.0ms)
+  Rendered students/new.html.erb within layouts/application (117.5ms)
+Completed 200 OK in 107984ms (Views: 132.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 19:29:40 +0530
+Processing by StudentsController#new as HTML
+  [1m[36mState Load (0.1ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (113.8ms)
+  Rendered students/new.html.erb within layouts/application (114.6ms)
+Completed 200 OK in 222ms (Views: 125.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 19:29:40 +0530
+Processing by StudentsController#new as HTML
+  [1m[35mState Load (0.2ms)[0m  SELECT "states".* FROM "states" 
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools" [0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered students/_form.html.erb (20.8ms)
+  Rendered students/new.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:29:40 +0530
+Served asset /screen.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:29:40 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:29:40 +0530
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:29:40 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:29:40 +0530
+Served asset /feedbacks.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:29:40 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:29:40 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:29:40 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 19:29:44 +0530
+Processing by StudentsController#new as HTML
+  [1m[36mState Load (0.3ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.2ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (20.2ms)
+  Rendered students/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 85ms (Views: 84.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:29:44 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:29:44 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:29:44 +0530
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:29:44 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:29:44 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:29:44 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:29:44 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:29:44 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 19:30:28 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WKQx6EXyJESWaU7gJy5b5W99HaWaKGtguCPBCQIiBRM=", "student"=>{"title"=>"mr", "first_name"=>"a", "last_name"=>"a", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"a", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"", "email_confirmation"=>"", "mobile"=>"", "phone"=>"", "address1"=>"a", "address2"=>"", "suburb"=>"", "state_id"=>"1", "post_code"=>"", "login_email"=>"sameera207@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"1"}, "picture"=>"", "file"=>{"0"=>#<ActionDispatch::Http::UploadedFile:0x00000001e32528 @original_filename="1942.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file[0]\"; filename=\"1942.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20120718-15966-1hb24he>>}, "pet_dog"=>"1", "recaptcha_challenge_field"=>"03AHJ_Vut7r_xaZuXkCua_qEkJThpMudMyUmjszXZiGaJ1cEZuIYBpwbcGIuCr7TGkUZe7BvZIWVQyPljOMsOdVmW-_AgeMicMCPp5JaoqFfcsm37Hz7_WtuDd0RUymLPL3tbsD7owC8t1tgcXPF4KuEUT6hj0OKcO4Q", "recaptcha_response_field"=>"", "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'sameera207@gmail.com' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'sameera207@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at", "user_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 18 Jul 2012 14:00:29 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "sameera207@gmail.com"], ["encrypted_password", "$2a$10$PLXPu8wwa3VeEPcVG.nALeK6IB4XmfPnknqF5v6ZTHIADwXvPhbDq"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Wed, 18 Jul 2012 14:00:29 UTC +00:00], ["user_type", "STUDENT"]]
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "students" ("acceptance", "address1", "address2", "completed", "confirm_email", "course_id", "created_at", "date_of_birth", "declaration1", "email", "faculty_id", "first_name", "last_name", "mobile", "note1", "note2", "note3", "parent_mobile", "parent_name", "parent_phone", "phone", "post_code", "school_id", "state_id", "suburb", "title", "uac_number", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["acceptance", 0], ["address1", "a"], ["address2", ""], ["completed", false], ["confirm_email", nil], ["course_id", 1], ["created_at", Wed, 18 Jul 2012 14:00:29 UTC +00:00], ["date_of_birth", Wed, 18 Jul 2012], ["declaration1", true], ["email", ""], ["faculty_id", nil], ["first_name", "a"], ["last_name", "a"], ["mobile", ""], ["note1", ""], ["note2", ""], ["note3", ""], ["parent_mobile", ""], ["parent_name", "a"], ["parent_phone", ""], ["phone", ""], ["post_code", ""], ["school_id", 1], ["state_id", 1], ["suburb", ""], ["title", "mr"], ["uac_number", ""], ["updated_at", Wed, 18 Jul 2012 14:00:29 UTC +00:00], ["user_id", 4]]
+  [1m[36m (121.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "student_files" ("name", "student_id") VALUES (?, ?)[0m  [["name", "1942.png1"], ["student_id", 1]]
+  [1m[35m (79.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/students/1
+Completed 302 Found in 445ms (ActiveRecord: 208.5ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2012-07-18 19:30:29 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 18ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-07-18 19:30:29 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (59.5ms)
+Completed 200 OK in 78ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:30:29 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:30:29 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:30:29 +0530
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:30:29 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:30:29 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:30:29 +0530
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:30:29 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:30:29 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-07-18 19:30:44 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WKQx6EXyJESWaU7gJy5b5W99HaWaKGtguCPBCQIiBRM=", "user"=>{"email"=>"sameera207@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'sameera207@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2012-07-18 14:00:44.911914', "current_sign_in_at" = '2012-07-18 14:00:44.911914', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2012-07-18 14:00:44.914019' WHERE "users"."id" = 4[0m
+  [1m[35m (104.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/students/1
+Completed 302 Found in 327ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2012-07-18 19:30:45 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mState Load (0.2ms)[0m  SELECT "states".* FROM "states" WHERE "states"."id" = 1 LIMIT 1
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools" WHERE "schools"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered students/show.html.erb within layouts/application (86.6ms)
+Completed 500 Internal Server Error in 96ms
+
+ActionView::Template::Error (undefined method `declaration2' for #<Student:0x007f1df05e3f98>):
+    125: 
+    126: <p>
+    127:   <b>Declaration2:</b>
+    128:   <%= @student.declaration2 %>
+    129: </p>
+    130: 
+    131: <p>
+  app/views/students/show.html.erb:128:in `_app_views_students_show_html_erb__1107077483341155233_69883281322960'
+  app/controllers/students_controller.rb:20:in `show'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.1ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2012-07-18 19:31:15 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mState Load (0.2ms)[0m  SELECT "states".* FROM "states" WHERE "states"."id" = 1 LIMIT 1
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools" WHERE "schools"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered students/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:31:15 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:31:15 +0530
+Served asset /screen-local.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:31:15 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:31:15 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:31:15 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:31:15 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:31:15 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:31:15 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:32:05 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 74ms (Views: 14.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:32:05 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:32:05 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:32:05 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:32:05 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:32:05 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:32:05 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:32:05 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:32:05 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 19:32:11 +0530
+Processing by StudentsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mState Load (0.1ms)[0m  SELECT "states".* FROM "states" 
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools" [0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered students/_form.html.erb (108.3ms)
+  Rendered students/new.html.erb within layouts/application (109.2ms)
+Completed 200 OK in 156ms (Views: 119.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:32:12 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:32:12 +0530
+Served asset /screen-local.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:32:12 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:32:12 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:32:12 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:32:12 +0530
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:32:12 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:32:12 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:39:52 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 67ms (Views: 14.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:39:52 +0530
+Served asset /screen.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:39:52 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:39:52 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:39:52 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:39:52 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:39:52 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:39:52 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:39:52 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:41:34 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 81ms (Views: 78.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:41:34 +0530
+Served asset /screen.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:41:34 +0530
+Served asset /screen-local.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:41:34 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:41:34 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:41:34 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:41:35 +0530
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:41:35 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:41:35 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:41:41 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:41:41 +0530
+Served asset /screen.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:41:41 +0530
+Served asset /screen-local.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:41:41 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:41:41 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:41:41 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:41:41 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:41:41 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:41:41 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:41:57 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:41:57 +0530
+Served asset /screen.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:41:57 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:41:57 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:41:58 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:41:58 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:41:58 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:41:58 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:41:58 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:42:01 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 76ms (Views: 73.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:42:01 +0530
+Served asset /screen.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:42:01 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:42:02 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:42:02 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:42:02 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:42:02 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:42:02 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:42:02 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:42:11 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:42:11 +0530
+Served asset /screen.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:42:11 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:42:11 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:42:11 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:42:12 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:42:12 +0530
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:42:12 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:42:12 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:43:10 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:43:10 +0530
+Served asset /screen.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:43:10 +0530
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:43:10 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:43:10 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:43:10 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:43:10 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:43:10 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:43:10 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (62ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:43:18 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:43:18 +0530
+Served asset /screen.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:43:18 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:43:18 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:43:18 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:43:18 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:43:18 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:43:19 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:43:19 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:43:43 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:43:43 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:43:43 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:43:43 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:43:43 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:43:43 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:43:43 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:43:43 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:43:43 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:44:06 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 13.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:44:06 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:44:06 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:44:06 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:44:06 +0530
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:44:06 +0530
+Served asset /application.js - 304 Not Modified (63ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:44:06 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:44:06 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:44:06 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:44:57 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:44:57 +0530
+Served asset /screen.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:44:57 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:44:57 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:44:57 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:44:57 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:44:57 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:44:57 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:44:57 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:45:06 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:45:06 +0530
+Served asset /screen.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:45:06 +0530
+Served asset /screen-local.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:45:06 +0530
+Served asset /feedbacks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:45:06 +0530
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:45:06 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:45:06 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:45:06 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:45:07 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:46:53 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:46:53 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:46:53 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:46:53 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:46:54 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:46:54 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:46:54 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:46:54 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:46:54 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2012-07-18 19:46:55 +0530
+Processing by Devise::SessionsController#destroy as HTML
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 47ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:46:55 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-07-18 19:46:55 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:46:55 +0530
+Served asset /screen.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:46:55 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:46:55 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:46:55 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:46:55 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:46:55 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:46:55 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:46:55 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-07-18 19:47:05 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cYdiDdSwjE63j/H7Q6m2l+Di2AUoSPXX3U7IRc9wDE4=", "user"=>{"email"=>"sameera207@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'sameera207@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "current_sign_in_at" = '2012-07-18 14:17:05.821632', "sign_in_count" = 2, "updated_at" = '2012-07-18 14:17:05.822984' WHERE "users"."id" = 4
+  [1m[36m (86.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 181ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:47:05 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."completed" = 't'[0m
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:47:06 +0530
+Served asset /screen.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:47:06 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:47:06 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:47:06 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:47:06 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:47:06 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:47:06 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:47:06 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:48:33 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."completed" = 't'[0m
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:48:33 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:48:33 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:33 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:33 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:33 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:33 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:48:33 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:48:33 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2012-07-18 19:48:35 +0530
+Processing by Devise::SessionsController#destroy as HTML
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:48:35 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-07-18 19:48:35 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:48:35 +0530
+Served asset /screen.css - 304 Not Modified (80ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:48:35 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:35 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:35 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:35 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:35 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:48:35 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:48:35 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-07-18 19:48:36 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2cxxQxQW02HTpGHLb0ZPUZB1tO2CZfwvagFx5av6TNQ=", "user"=>{"email"=>"morgans987@hotmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'morgans987@hotmail.com' LIMIT 1[0m
+Completed 401 Unauthorized in 2ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2cxxQxQW02HTpGHLb0ZPUZB1tO2CZfwvagFx5av6TNQ=", "user"=>{"email"=>"morgans987@hotmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 100ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:48:37 +0530
+Served asset /screen.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:48:37 +0530
+Served asset /screen-local.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:37 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:37 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:37 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:37 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:48:37 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:48:37 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-07-18 19:48:47 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2cxxQxQW02HTpGHLb0ZPUZB1tO2CZfwvagFx5av6TNQ=", "user"=>{"email"=>"sameera207@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'sameera207@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2012-07-18 14:17:05.821632', "current_sign_in_at" = '2012-07-18 14:18:47.887195', "sign_in_count" = 3, "updated_at" = '2012-07-18 14:18:47.888567' WHERE "users"."id" = 4
+  [1m[36m (82.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 177ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:48:47 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."completed" = 't'[0m
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:48:48 +0530
+Served asset /screen.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:48 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:48:48 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:48 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:48 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:48:48 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:48:48 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:48:48 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:57:40 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."user_id" = 4 LIMIT 1[0m
+Completed 500 Internal Server Error in 136ms
+
+NoMethodError (undefined method `empty?' for #<Student:0x007f1de83a4438>):
+  app/models/student.rb:67:in `logged_in_student'
+  app/controllers/home_controller.rb:10:in `handle_student_login'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.5ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:58:12 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."user_id" = 4 LIMIT 1[0m
+Completed 500 Internal Server Error in 133ms
+
+NoMethodError (undefined method `first' for #<Student:0x007f1dec4cc9d8>):
+  app/models/student.rb:67:in `logged_in_student'
+  app/controllers/home_controller.rb:10:in `handle_student_login'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:58:22 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."user_id" = 4 LIMIT 1[0m
+Completed 500 Internal Server Error in 18026ms
+
+NoMethodError (undefined method `first' for #<Student:0x007f1dec4e3b10>):
+  app/models/student.rb:68:in `logged_in_student'
+  app/controllers/home_controller.rb:10:in `handle_student_login'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 19:58:57 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."user_id" = 4 LIMIT 1[0m
+Redirected to http://localhost:3000/students/1
+Filter chain halted as :handle_student_login rendered or redirected
+Completed 302 Found in 136ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2012-07-18 19:58:58 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mState Load (0.1ms)[0m  [1mSELECT "states".* FROM "states" WHERE "states"."id" = 1 LIMIT 1[0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" WHERE "schools"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  Rendered students/show.html.erb within layouts/application (41.6ms)
+Completed 200 OK in 57ms (Views: 51.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:58:58 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:58:58 +0530
+Served asset /screen-local.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:58:58 +0530
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:58:58 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:58:58 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:58:58 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:58:58 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:58:58 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2012-07-18 19:59:05 +0530
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" [0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered students/index.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `declaration2' for #<Student:0x007f1df045b0b8>):
+    61:     <td><%= student.note2 %></td>
+    62:     <td><%= student.note3 %></td>
+    63:     <td><%= student.declaration1 %></td>
+    64:     <td><%= student.declaration2 %></td>
+    65:     <td><%= student.declaration3 %></td>
+    66:     <td><%= student.declaration4 %></td>
+    67:     <td><%= student.completed %></td>
+  app/views/students/index.html.erb:64:in `block in _app_views_students_index_html_erb___3510037610242367226_69883280869440'
+  app/views/students/index.html.erb:38:in `each'
+  app/views/students/index.html.erb:38:in `_app_views_students_index_html_erb___3510037610242367226_69883280869440'
+  app/controllers/students_controller.rb:11:in `index'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.7ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2012-07-18 19:59:26 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mState Load (0.2ms)[0m  SELECT "states".* FROM "states" WHERE "states"."id" = 1 LIMIT 1
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools" WHERE "schools"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered students/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 19:59:26 +0530
+Served asset /screen.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 19:59:26 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 19:59:26 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 19:59:26 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 19:59:26 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 19:59:26 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 19:59:26 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 19:59:26 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2012-07-18 20:00:05 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mState Load (0.1ms)[0m  SELECT "states".* FROM "states" WHERE "states"."id" = 1 LIMIT 1
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools" WHERE "schools"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered students/show.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 177ms (Views: 52.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:00:05 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:00:05 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:00:05 +0530
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:00:05 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:00:06 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:00:06 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:00:06 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:00:06 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2012-07-18 20:00:10 +0530
+Processing by Devise::SessionsController#destroy as HTML
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 20:00:10 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-07-18 20:00:10 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:00:10 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:00:10 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:00:10 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:00:10 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:00:10 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:00:10 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:00:10 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:00:10 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 20:00:16 +0530
+Processing by StudentsController#new as HTML
+  [1m[35mState Load (0.2ms)[0m  SELECT "states".* FROM "states" 
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools" [0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered students/_form.html.erb (71.2ms)
+  Rendered students/new.html.erb within layouts/application (72.5ms)
+Completed 200 OK in 84ms (Views: 83.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:00:16 +0530
+Served asset /screen.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:00:16 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:00:16 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:00:16 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:00:16 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:00:17 +0530
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:00:17 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:00:17 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 20:01:09 +0530
+Processing by StudentsController#new as HTML
+  [1m[36mState Load (0.1ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (100.2ms)
+  Rendered students/new.html.erb within layouts/application (101.1ms)
+Completed 200 OK in 208ms (Views: 121.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:01:09 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:01:09 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:01:09 +0530
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:01:09 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:01:09 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:01:09 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:01:09 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:01:09 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 20:01:54 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pVdok6GOPY3L7Klps1+0yT+qEQ0fOSmWh1IVCPUT3Ls=", "student"=>{"title"=>"mr", "first_name"=>"a", "last_name"=>"a", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"a", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"", "email_confirmation"=>"", "mobile"=>"", "phone"=>"", "address1"=>"", "address2"=>"", "suburb"=>"", "state_id"=>"1", "post_code"=>"", "login_email"=>"sameera@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "recaptcha_challenge_field"=>"03AHJ_Vuv15DShWuWLZKmdrhFCAzCWMkqQ2WqYjE4TJPT4QrPOnH72Sclkkb6imbL8dPMbZbSRXPmLhn_5KgJ5hriY8W_WBf52uUKgc4eXlj72AnGbauNJpz3pOQ_pn8rf42F2Xb-8JP00-RSbFUKoTlcNj5o2F3Zbkw", "recaptcha_response_field"=>"", "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'sameera@gmail.com' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'sameera@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at", "user_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 18 Jul 2012 14:31:55 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "sameera@gmail.com"], ["encrypted_password", "$2a$10$pdANZn9grhlIhKVUckO7oekl55qChNsb16kAWdZ2HdsxmTOr0S21a"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Wed, 18 Jul 2012 14:31:55 UTC +00:00], ["user_type", "STUDENT"]]
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "students" ("acceptance", "address1", "address2", "completed", "confirm_email", "course_id", "created_at", "date_of_birth", "declaration1", "email", "faculty_id", "first_name", "last_name", "mobile", "note1", "note2", "note3", "parent_mobile", "parent_name", "parent_phone", "phone", "post_code", "school_id", "state_id", "suburb", "title", "uac_number", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["acceptance", 0], ["address1", ""], ["address2", ""], ["completed", false], ["confirm_email", nil], ["course_id", 1], ["created_at", Wed, 18 Jul 2012 14:31:55 UTC +00:00], ["date_of_birth", Wed, 18 Jul 2012], ["declaration1", false], ["email", ""], ["faculty_id", nil], ["first_name", "a"], ["last_name", "a"], ["mobile", ""], ["note1", ""], ["note2", ""], ["note3", ""], ["parent_mobile", ""], ["parent_name", "a"], ["parent_phone", ""], ["phone", ""], ["post_code", ""], ["school_id", 1], ["state_id", 1], ["suburb", ""], ["title", "mr"], ["uac_number", ""], ["updated_at", Wed, 18 Jul 2012 14:31:55 UTC +00:00], ["user_id", 5]]
+  [1m[36m (116.4ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 27845ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/students_controller.rb:36:in `block in create'
+  app/controllers/students_controller.rb:34:in `times'
+  app/controllers/students_controller.rb:34:in `create'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (56.5ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.4ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 20:02:49 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pVdok6GOPY3L7Klps1+0yT+qEQ0fOSmWh1IVCPUT3Ls=", "student"=>{"title"=>"mr", "first_name"=>"a", "last_name"=>"a", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"a", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"", "email_confirmation"=>"", "mobile"=>"", "phone"=>"", "address1"=>"", "address2"=>"", "suburb"=>"", "state_id"=>"1", "post_code"=>"", "login_email"=>"sameeradf@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "recaptcha_challenge_field"=>"03AHJ_VuuacB5v0Gqv9meAov-4ghg_OLilgWp61HrpvAO_sNeFOuCBWYQQHLyQdtrGtUKKKD-T7wsZrZ-f4McebnmEg19VWnnYPsGpjhaAVsvXuchzdmP3UPZRhlHiW6kKWq3XJaE2fGhhJ0-FSdro9KKnwTDEp693Bw", "recaptcha_response_field"=>"", "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'sameeradf@gmail.com' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'sameeradf@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at", "user_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 18 Jul 2012 14:32:49 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "sameeradf@gmail.com"], ["encrypted_password", "$2a$10$gqvgsbnxwlIlChiu31dozeQF.P53v302zpf//tDH1RfEmzxGe4yzu"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Wed, 18 Jul 2012 14:32:49 UTC +00:00], ["user_type", "STUDENT"]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "students" ("acceptance", "address1", "address2", "completed", "confirm_email", "course_id", "created_at", "date_of_birth", "declaration1", "email", "faculty_id", "first_name", "last_name", "mobile", "note1", "note2", "note3", "parent_mobile", "parent_name", "parent_phone", "phone", "post_code", "school_id", "state_id", "suburb", "title", "uac_number", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["acceptance", 0], ["address1", ""], ["address2", ""], ["completed", false], ["confirm_email", nil], ["course_id", 1], ["created_at", Wed, 18 Jul 2012 14:32:49 UTC +00:00], ["date_of_birth", Wed, 18 Jul 2012], ["declaration1", false], ["email", ""], ["faculty_id", nil], ["first_name", "a"], ["last_name", "a"], ["mobile", ""], ["note1", ""], ["note2", ""], ["note3", ""], ["parent_mobile", ""], ["parent_name", "a"], ["parent_phone", ""], ["phone", ""], ["post_code", ""], ["school_id", 1], ["state_id", 1], ["suburb", ""], ["title", "mr"], ["uac_number", ""], ["updated_at", Wed, 18 Jul 2012 14:32:49 UTC +00:00], ["user_id", 6]]
+  [1m[36m (100.4ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 399ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/students_controller.rb:36:in `block in create'
+  app/controllers/students_controller.rb:34:in `times'
+  app/controllers/students_controller.rb:34:in `create'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 20:04:08 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pVdok6GOPY3L7Klps1+0yT+qEQ0fOSmWh1IVCPUT3Ls=", "student"=>{"title"=>"mr", "first_name"=>"a", "last_name"=>"a", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"a", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"", "email_confirmation"=>"", "mobile"=>"", "phone"=>"", "address1"=>"", "address2"=>"", "suburb"=>"", "state_id"=>"1", "post_code"=>"", "login_email"=>"s@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "recaptcha_challenge_field"=>"03AHJ_VutZoHLY__ichavQBaTXKIgPOWAx7ZnFy5Cfbh52WUfuVeKmLxHYipwepi3Dm0RSIErn5kHr6hSabY3dQCjoF_oUSSnkJ0zBCVGsFqpTD8EFf2JBbMdZIXNHj6MWY_wOyj8LdhO2QelZ-6zIAY8j1q5AbGiCgw", "recaptcha_response_field"=>"", "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 's@gmail.com' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 's@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at", "user_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 18 Jul 2012 14:34:09 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "s@gmail.com"], ["encrypted_password", "$2a$10$6HgI7i0ZsZrXxa5dW9EURuK6xXNSWs5u/4aJL0LuSkIY4EyDMENbG"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Wed, 18 Jul 2012 14:34:09 UTC +00:00], ["user_type", "STUDENT"]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "students" ("acceptance", "address1", "address2", "completed", "confirm_email", "course_id", "created_at", "date_of_birth", "declaration1", "email", "faculty_id", "first_name", "last_name", "mobile", "note1", "note2", "note3", "parent_mobile", "parent_name", "parent_phone", "phone", "post_code", "school_id", "state_id", "suburb", "title", "uac_number", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["acceptance", 0], ["address1", ""], ["address2", ""], ["completed", false], ["confirm_email", nil], ["course_id", 1], ["created_at", Wed, 18 Jul 2012 14:34:09 UTC +00:00], ["date_of_birth", Wed, 18 Jul 2012], ["declaration1", false], ["email", ""], ["faculty_id", nil], ["first_name", "a"], ["last_name", "a"], ["mobile", ""], ["note1", ""], ["note2", ""], ["note3", ""], ["parent_mobile", ""], ["parent_name", "a"], ["parent_phone", ""], ["phone", ""], ["post_code", ""], ["school_id", 1], ["state_id", 1], ["suburb", ""], ["title", "mr"], ["uac_number", ""], ["updated_at", Wed, 18 Jul 2012 14:34:09 UTC +00:00], ["user_id", 7]]
+  [1m[36m (127.1ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 377ms
+
+NoMethodError (undefined method `ni?' for nil:NilClass):
+  app/controllers/students_controller.rb:35:in `block in create'
+  app/controllers/students_controller.rb:34:in `times'
+  app/controllers/students_controller.rb:34:in `create'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 20:04:27 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pVdok6GOPY3L7Klps1+0yT+qEQ0fOSmWh1IVCPUT3Ls=", "student"=>{"title"=>"mr", "first_name"=>"a", "last_name"=>"a", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"a", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"", "email_confirmation"=>"", "mobile"=>"", "phone"=>"", "address1"=>"", "address2"=>"", "suburb"=>"", "state_id"=>"1", "post_code"=>"", "login_email"=>"s@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "recaptcha_challenge_field"=>"03AHJ_VutoB6yk8z-6Vp8ErhDGeELlkS7AXORmF5dlgm_XaMzCHJGFXX_vRUJYniwjmpWA1ldS4lndJgfxf_gZlMRInSMjA3TUV2_ahD0A4WuhqhY7RMPdxREU_-CwqBKaaKmK_BHNkmOn2lKH65tUebI4JiGGx-GICg", "recaptcha_response_field"=>"", "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 's@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mState Load (0.1ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (102.6ms)
+  Rendered students/new.html.erb within layouts/application (103.5ms)
+Completed 200 OK in 326ms (Views: 113.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:04:28 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:04:28 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:04:28 +0530
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:04:28 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:04:28 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:04:28 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:04:28 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:04:28 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 20:04:47 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pVdok6GOPY3L7Klps1+0yT+qEQ0fOSmWh1IVCPUT3Ls=", "student"=>{"title"=>"mr", "first_name"=>"a", "last_name"=>"a", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"a", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"", "email_confirmation"=>"", "mobile"=>"", "phone"=>"", "address1"=>"", "address2"=>"", "suburb"=>"", "state_id"=>"1", "post_code"=>"", "login_email"=>"s123@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "recaptcha_challenge_field"=>"03AHJ_VusHg_GRMXljsrRZ_NymSjv7qWZN0T0scEg7V7C40hN7rTTqP4fG8dicMIyCcN_87Ln29YoQYodHylvCVzwvDUbRps8ItJTIdOEF7wtRw72wc6VxEXhePL-NBBPJa4nXy1USJEJaJ1tRPNPxi9EzcFzd60zWfg", "recaptcha_response_field"=>"", "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 's123@gmail.com' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 's123@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at", "user_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 18 Jul 2012 14:34:48 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "s123@gmail.com"], ["encrypted_password", "$2a$10$KfpvOz8syEetoWeC/.rxreG4qYkyhkiPH1iPj/a/Q2S4cf4psqO4q"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Wed, 18 Jul 2012 14:34:48 UTC +00:00], ["user_type", "STUDENT"]]
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "students" ("acceptance", "address1", "address2", "completed", "confirm_email", "course_id", "created_at", "date_of_birth", "declaration1", "email", "faculty_id", "first_name", "last_name", "mobile", "note1", "note2", "note3", "parent_mobile", "parent_name", "parent_phone", "phone", "post_code", "school_id", "state_id", "suburb", "title", "uac_number", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["acceptance", 0], ["address1", ""], ["address2", ""], ["completed", false], ["confirm_email", nil], ["course_id", 1], ["created_at", Wed, 18 Jul 2012 14:34:48 UTC +00:00], ["date_of_birth", Wed, 18 Jul 2012], ["declaration1", false], ["email", ""], ["faculty_id", nil], ["first_name", "a"], ["last_name", "a"], ["mobile", ""], ["note1", ""], ["note2", ""], ["note3", ""], ["parent_mobile", ""], ["parent_name", "a"], ["parent_phone", ""], ["phone", ""], ["post_code", ""], ["school_id", 1], ["state_id", 1], ["suburb", ""], ["title", "mr"], ["uac_number", ""], ["updated_at", Wed, 18 Jul 2012 14:34:48 UTC +00:00], ["user_id", 8]]
+  [1m[36m (117.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/students/5
+Completed 302 Found in 305ms (ActiveRecord: 119.6ms)
+
+
+Started GET "/students/5" for 127.0.0.1 at 2012-07-18 20:04:48 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"5"}
+Completed 401 Unauthorized in 8ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-07-18 20:04:48 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:04:48 +0530
+Served asset /screen.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:04:48 +0530
+Served asset /screen-local.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:04:48 +0530
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:04:48 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:04:48 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:04:48 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:04:48 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:04:48 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-07-18 20:04:58 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pVdok6GOPY3L7Klps1+0yT+qEQ0fOSmWh1IVCPUT3Ls=", "user"=>{"email"=>"sameera207@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'sameera207@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2012-07-18 14:18:47.887195', "current_sign_in_at" = '2012-07-18 14:34:58.910884', "sign_in_count" = 4, "updated_at" = '2012-07-18 14:34:58.912495' WHERE "users"."id" = 4
+  [1m[36m (96.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/students/5
+Completed 302 Found in 193ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students/5" for 127.0.0.1 at 2012-07-18 20:04:59 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.7ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+  [1m[36mState Load (0.2ms)[0m  [1mSELECT "states".* FROM "states" WHERE "states"."id" = 1 LIMIT 1[0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" WHERE "schools"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  Rendered students/show.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 34ms (Views: 26.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:04:59 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:04:59 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:04:59 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:04:59 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:04:59 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:04:59 +0530
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:04:59 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:04:59 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/5/edit" for 127.0.0.1 at 2012-07-18 20:05:02 +0530
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mState Load (0.2ms)[0m  SELECT "states".* FROM "states" 
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools" [0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  [1m[36mStudentFile Load (0.1ms)[0m  [1mSELECT "student_files".* FROM "student_files" WHERE "student_files"."student_id" = 5[0m
+  Rendered students/_form.html.erb (128.4ms)
+  Rendered students/edit.html.erb within layouts/application (130.9ms)
+Completed 200 OK in 146ms (Views: 141.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:05:02 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:05:02 +0530
+Served asset /screen.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:05:02 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:05:02 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:05:02 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:05:02 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:05:02 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:05:02 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/5/edit" for 127.0.0.1 at 2012-07-18 20:09:39 +0530
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mState Load (0.2ms)[0m  SELECT "states".* FROM "states" 
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools" [0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  [1m[36mStudentFile Load (0.2ms)[0m  [1mSELECT "student_files".* FROM "student_files" WHERE "student_files"."student_id" = 5[0m
+  Rendered students/_form.html.erb (19.0ms)
+  Rendered students/edit.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:09:39 +0530
+Served asset /screen.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:09:39 +0530
+Served asset /screen-local.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:09:39 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:09:39 +0530
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:09:39 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:09:39 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:09:39 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:09:39 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2012-07-18 20:09:51 +0530
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  Rendered students/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    35:     <th></th>
+    36:   </tr>
+    37: 
+    38: <% @students.each do |student| %>
+    39:   <tr>
+    40:     <td><%= student.title %></td>
+    41:     <td><%= student.first_name %></td>
+  app/views/students/index.html.erb:38:in `_app_views_students_index_html_erb___3510037610242367226_69883280869440'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.3ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/students/5" for 127.0.0.1 at 2012-07-18 20:09:56 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+  [1m[35mState Load (0.1ms)[0m  SELECT "states".* FROM "states" WHERE "states"."id" = 1 LIMIT 1
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools" WHERE "schools"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered students/show.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 25ms (Views: 21.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:09:56 +0530
+Served asset /screen.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:09:56 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:09:56 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:09:56 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:09:56 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:09:57 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:09:57 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:09:57 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/5" for 127.0.0.1 at 2012-07-18 20:10:10 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+  [1m[35mState Load (0.1ms)[0m  SELECT "states".* FROM "states" WHERE "states"."id" = 1 LIMIT 1
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools" WHERE "schools"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered students/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 23ms (Views: 18.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:10:11 +0530
+Served asset /screen.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:10:11 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:10:11 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:10:11 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:10:11 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:10:11 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:10:11 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:10:11 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/5/edit" for 127.0.0.1 at 2012-07-18 20:10:23 +0530
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mState Load (0.2ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  [1m[35mStudentFile Load (0.1ms)[0m  SELECT "student_files".* FROM "student_files" WHERE "student_files"."student_id" = 5
+  Rendered students/_form.html.erb (73.3ms)
+  Rendered students/edit.html.erb within layouts/application (75.5ms)
+Completed 200 OK in 90ms (Views: 86.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:10:24 +0530
+Served asset /screen.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:10:24 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:10:24 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:10:24 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:10:24 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:10:24 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:10:24 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:10:24 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started PUT "/students/5" for 127.0.0.1 at 2012-07-18 20:10:38 +0530
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pVdok6GOPY3L7Klps1+0yT+qEQ0fOSmWh1IVCPUT3Ls=", "student"=>{"title"=>"mr", "first_name"=>"a", "last_name"=>"a", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"a", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"", "email_confirmation"=>"", "mobile"=>"", "phone"=>"", "address1"=>"address", "address2"=>"", "suburb"=>"suberb", "state_id"=>"1", "post_code"=>"", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "commit"=>"Submit", "id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mUPDATE "students" SET "address1" = 'address', "suburb" = 'suberb', "updated_at" = '2012-07-18 14:40:38.539348' WHERE "students"."id" = 5[0m
+  [1m[35m (96.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/students/5
+Completed 302 Found in 110ms (ActiveRecord: 97.6ms)
+
+
+Started GET "/students/5" for 127.0.0.1 at 2012-07-18 20:10:38 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+  [1m[35mState Load (0.1ms)[0m  SELECT "states".* FROM "states" WHERE "states"."id" = 1 LIMIT 1
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools" WHERE "schools"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered students/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 22ms (Views: 18.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:10:38 +0530
+Served asset /screen.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:10:38 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:10:38 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:10:38 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:10:38 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:10:38 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:10:38 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:10:38 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/5/edit" for 127.0.0.1 at 2012-07-18 20:11:02 +0530
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mState Load (0.2ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.2ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  [1m[35mStudentFile Load (0.2ms)[0m  SELECT "student_files".* FROM "student_files" WHERE "student_files"."student_id" = 5
+  Rendered students/_form.html.erb (19.8ms)
+  Rendered students/edit.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 36ms (Views: 32.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:11:02 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:11:02 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:11:02 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:11:02 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:11:02 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:11:02 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:11:02 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:11:02 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started PUT "/students/5" for 127.0.0.1 at 2012-07-18 20:11:18 +0530
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pVdok6GOPY3L7Klps1+0yT+qEQ0fOSmWh1IVCPUT3Ls=", "student"=>{"title"=>"mr", "first_name"=>"a", "last_name"=>"a", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"a", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"sameera@gmail.com", "email_confirmation"=>"sameera@gmail.com", "mobile"=>"", "phone"=>"", "address1"=>"address", "address2"=>"", "suburb"=>"suberb", "state_id"=>"1", "post_code"=>"", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "commit"=>"Submit", "id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mUPDATE "students" SET "email" = 'sameera@gmail.com', "updated_at" = '2012-07-18 14:41:18.863563' WHERE "students"."id" = 5[0m
+  [1m[35m (115.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  UPDATE "students" SET "completed" = 't', "updated_at" = '2012-07-18 14:41:18.983916' WHERE "students"."id" = 5
+  [1m[36m (94.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/students/5
+Completed 302 Found in 228ms (ActiveRecord: 212.9ms)
+
+
+Started GET "/students/5" for 127.0.0.1 at 2012-07-18 20:11:19 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+  [1m[36mState Load (0.2ms)[0m  [1mSELECT "states".* FROM "states" WHERE "states"."id" = 1 LIMIT 1[0m
+  [1m[35mSchool Load (0.2ms)[0m  SELECT "schools".* FROM "schools" WHERE "schools"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  Rendered students/show.html.erb within layouts/application (61.4ms)
+Completed 200 OK in 76ms (Views: 72.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:11:19 +0530
+Served asset /screen.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:11:19 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:11:19 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:11:19 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:11:19 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:11:19 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:11:19 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:11:19 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/5" for 127.0.0.1 at 2012-07-18 20:11:41 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+  [1m[36mState Load (0.2ms)[0m  [1mSELECT "states".* FROM "states" WHERE "states"."id" = 1 LIMIT 1[0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" WHERE "schools"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  Rendered students/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 25ms (Views: 20.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:11:42 +0530
+Served asset /screen.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:11:42 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:11:42 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:11:42 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:11:42 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:11:42 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:11:42 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:11:42 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/5" for 127.0.0.1 at 2012-07-18 20:12:08 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+  [1m[36mState Load (0.1ms)[0m  [1mSELECT "states".* FROM "states" WHERE "states"."id" = 1 LIMIT 1[0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" WHERE "schools"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  Rendered students/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 24ms (Views: 19.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:12:08 +0530
+Served asset /screen.css - 304 Not Modified (69ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:12:08 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:12:08 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:12:08 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:12:08 +0530
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:12:08 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:12:08 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:12:08 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2012-07-18 20:12:13 +0530
+Processing by Devise::SessionsController#destroy as HTML
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 20:12:13 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-07-18 20:12:13 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:12:13 +0530
+Served asset /screen.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:12:13 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:12:13 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:12:13 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:12:13 +0530
+Served asset /feedbacks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:12:13 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:12:13 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:12:13 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 20:14:51 +0530
+Processing by StudentsController#new as HTML
+  [1m[36mState Load (0.2ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (74.1ms)
+  Rendered students/new.html.erb within layouts/application (74.8ms)
+Completed 200 OK in 86ms (Views: 84.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:14:51 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:14:51 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:14:51 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:14:51 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:14:51 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:14:51 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:14:51 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:14:51 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 20:15:00 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LZLMO92jB92YBYDLm4L2ZatpJAVRCcf3rDaI8XgevKI=", "student"=>{"title"=>"mr", "first_name"=>"", "last_name"=>"", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"s", "email_confirmation"=>"sasd", "mobile"=>"", "phone"=>"", "address1"=>"", "address2"=>"", "suburb"=>"", "state_id"=>"1", "post_code"=>"", "login_email"=>"morgans987@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "recaptcha_challenge_field"=>"03AHJ_VuuVhedh63fADd7cTEpC6HC8Ph-cW23dQvVnQPSDDjflsTHIdnAkSXzhP-dCRNlLisHPB8-wDNT91Zw6uJV47nuoV1efB0Kmzw9stdyYzZcrH6naiTr2AXKGAFzNqS_Y4-da2GEmC4-JA_wsjqIt6yzX8CvRKg", "recaptcha_response_field"=>"", "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'morgans987@hotmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mState Load (0.2ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.2ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (75.4ms)
+  Rendered students/new.html.erb within layouts/application (76.4ms)
+Completed 200 OK in 186ms (Views: 87.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:15:00 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:15:00 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:15:00 +0530
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:15:00 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:15:00 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:15:00 +0530
+Served asset /feedbacks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:15:00 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:15:00 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 20:15:17 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LZLMO92jB92YBYDLm4L2ZatpJAVRCcf3rDaI8XgevKI=", "student"=>{"title"=>"mr", "first_name"=>"", "last_name"=>"", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"s", "email_confirmation"=>"sasd", "mobile"=>"", "phone"=>"", "address1"=>"", "address2"=>"", "suburb"=>"", "state_id"=>"1", "post_code"=>"", "login_email"=>"sss", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "recaptcha_challenge_field"=>"03AHJ_Vus_R9xFBZeFNbOa6Jy4fDr1dbjvHarfPodErmvjouIfkVXETrDkGpSNkxxdpGBF0RyY7Ax1nVQIJzl0fsaw_zLYKwIUn9k8NfrsyF3mv404ktVBzp6ShLfb_7B_tJRgLp6VNNPF1D58HQeLDdrUZFE04p3VnQ", "recaptcha_response_field"=>"", "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'sss' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mState Load (0.2ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (22.4ms)
+  Rendered students/new.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 183ms (Views: 85.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:15:18 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:15:18 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:15:18 +0530
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:15:18 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:15:18 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:15:18 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:15:18 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:15:18 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 20:15:50 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LZLMO92jB92YBYDLm4L2ZatpJAVRCcf3rDaI8XgevKI=", "student"=>{"title"=>"mr", "first_name"=>"", "last_name"=>"", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"s", "email_confirmation"=>"sasd", "mobile"=>"", "phone"=>"", "address1"=>"", "address2"=>"", "suburb"=>"", "state_id"=>"1", "post_code"=>"", "login_email"=>"sss", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "recaptcha_challenge_field"=>"03AHJ_Vus_R9xFBZeFNbOa6Jy4fDr1dbjvHarfPodErmvjouIfkVXETrDkGpSNkxxdpGBF0RyY7Ax1nVQIJzl0fsaw_zLYKwIUn9k8NfrsyF3mv404ktVBzp6ShLfb_7B_tJRgLp6VNNPF1D58HQeLDdrUZFE04p3VnQ", "recaptcha_response_field"=>"", "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'sss' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mState Load (0.2ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (20.5ms)
+  Rendered students/new.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 129ms (Views: 31.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:15:51 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:15:51 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:15:51 +0530
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:15:51 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:15:51 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:15:51 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:15:51 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:15:51 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 20:16:08 +0530
+Processing by StudentsController#new as HTML
+  [1m[35mState Load (0.2ms)[0m  SELECT "states".* FROM "states" 
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools" [0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered students/_form.html.erb (19.0ms)
+  Rendered students/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:16:08 +0530
+Served asset /screen.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:16:08 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:16:08 +0530
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:16:08 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:16:08 +0530
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:16:08 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:16:08 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:16:08 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 20:16:56 +0530
+Processing by StudentsController#new as HTML
+  [1m[36mState Load (0.2ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (71.7ms)
+  Rendered students/new.html.erb within layouts/application (72.6ms)
+Completed 200 OK in 83ms (Views: 82.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:16:56 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:16:56 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:16:56 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:16:56 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:16:56 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:16:56 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:16:56 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:16:56 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 20:17:08 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LZLMO92jB92YBYDLm4L2ZatpJAVRCcf3rDaI8XgevKI=", "student"=>{"title"=>"mr", "first_name"=>"", "last_name"=>"", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"sameera@gmail.coms", "email_confirmation"=>"aa", "mobile"=>"", "phone"=>"", "address1"=>"", "address2"=>"", "suburb"=>"", "state_id"=>"1", "post_code"=>"", "login_email"=>"morgans987@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "recaptcha_challenge_field"=>"03AHJ_Vuur14Jwl2DdoN9kry_jUl_7cTi2U0-nKl3lIDXQZmINda6jsVL3LIDderXAHnCkpidrqtK8SoGDAKsRymh1Ad1KcDObGA5lzUZfo-uMwixid6joSk_F5lGNAmn_E7oh5L3hMYP1Y91JgeqF-B2KVKpZfQFNdw", "recaptcha_response_field"=>"", "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'morgans987@hotmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mState Load (0.3ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.2ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (72.6ms)
+  Rendered students/new.html.erb within layouts/application (73.4ms)
+Completed 200 OK in 186ms (Views: 84.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:17:08 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:17:08 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:17:08 +0530
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:17:08 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:17:08 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:17:08 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:17:08 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:17:09 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 20:18:57 +0530
+Processing by StudentsController#new as HTML
+  [1m[35mState Load (0.1ms)[0m  SELECT "states".* FROM "states" 
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools" [0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered students/_form.html.erb (104.2ms)
+  Rendered students/new.html.erb within layouts/application (105.3ms)
+Completed 200 OK in 159ms (Views: 125.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:18:58 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:18:58 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:18:58 +0530
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:18:58 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:18:58 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:18:58 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:18:58 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:18:58 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 20:19:13 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LZLMO92jB92YBYDLm4L2ZatpJAVRCcf3rDaI8XgevKI=", "student"=>{"title"=>"mr", "first_name"=>"", "last_name"=>"", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"s", "email_confirmation"=>"ss", "mobile"=>"", "phone"=>"", "address1"=>"", "address2"=>"", "suburb"=>"", "state_id"=>"1", "post_code"=>"", "login_email"=>"ss", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "recaptcha_challenge_field"=>"03AHJ_VutbvqrQ26i6f_N3Qg5LqXeUQGmyJeqCXycC4JfmXp3qGCRKVysOLdyVX9pnwbSa_oPxOolr7-OB25t1lIiW8H_ho9X59_etFY1bN3Yl12gxw66emYQNRvXxqDdbsnZywaw-j49Lsz-A40LliP2Y21Jrs5qrTg", "recaptcha_response_field"=>"", "commit"=>"Save"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'ss' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mState Load (0.2ms)[0m  SELECT "states".* FROM "states" 
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools" [0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered students/_form.html.erb (19.7ms)
+  Rendered students/new.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 213ms (Views: 31.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:19:13 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:19:14 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:19:14 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:19:14 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:19:14 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:19:14 +0530
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:19:14 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:19:14 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 20:19:44 +0530
+Processing by StudentsController#new as HTML
+  [1m[36mState Load (0.1ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (103.1ms)
+  Rendered students/new.html.erb within layouts/application (103.9ms)
+Completed 200 OK in 157ms (Views: 123.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:19:45 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:19:45 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:19:45 +0530
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:19:45 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:19:45 +0530
+Served asset /feedbacks.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:19:45 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:19:45 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:19:45 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 20:19:56 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LZLMO92jB92YBYDLm4L2ZatpJAVRCcf3rDaI8XgevKI=", "student"=>{"title"=>"mr", "first_name"=>"", "last_name"=>"", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"", "email_confirmation"=>"", "mobile"=>"", "phone"=>"", "address1"=>"", "address2"=>"", "suburb"=>"", "state_id"=>"1", "post_code"=>"", "login_email"=>"morgans987", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "recaptcha_challenge_field"=>"03AHJ_VuuslAGtBCItyd7_bc2aYfcK8Hrb1RQaKcN7ItswzJAKVFm-UgW14h1PYk8UfOrWYbI_OMnNKuwCJO61jO78ttB5M7qF9jM8Ydu14doFMd5FcMvbtr5vzH0bfMYCjlYasESr18lXogSXVoiMOyzfTfxxj2thww", "recaptcha_response_field"=>"", "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'morgans987' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mState Load (0.2ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (19.1ms)
+  Rendered students/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 147ms (Views: 31.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:19:56 +0530
+Served asset /screen.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:19:56 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:19:56 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:19:56 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:19:56 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:19:56 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:19:56 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:19:56 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (52ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 20:20:37 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 16ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-07-18 20:20:37 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 87ms (Views: 69.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:20:38 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:20:38 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:20:38 +0530
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:20:38 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:20:38 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:20:38 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:20:38 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:20:38 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 20:21:34 +0530
+Processing by StudentsController#new as HTML
+  [1m[35mState Load (0.1ms)[0m  SELECT "states".* FROM "states" 
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools" [0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered students/_form.html.erb (110.2ms)
+  Rendered students/new.html.erb within layouts/application (111.3ms)
+Completed 200 OK in 154ms (Views: 121.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:21:35 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:21:35 +0530
+Served asset /screen-local.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:21:35 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:21:35 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:21:35 +0530
+Served asset /application.js - 304 Not Modified (58ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:21:35 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:21:35 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:21:35 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-07-18 20:21:59 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LZLMO92jB92YBYDLm4L2ZatpJAVRCcf3rDaI8XgevKI=", "user"=>{"email"=>"principal@example.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'principal@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2012-07-18 14:51:59.323268', "current_sign_in_at" = '2012-07-18 14:51:59.323268', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2012-07-18 14:51:59.325068' WHERE "users"."id" = 2[0m
+  [1m[35m (123.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 220ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 20:21:59 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:21:59 +0530
+Served asset /screen.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:21:59 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:21:59 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:21:59 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:21:59 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:21:59 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:21:59 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:21:59 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/comments/new?id=5" for 127.0.0.1 at 2012-07-18 20:22:12 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered comments/_form.html.erb (7.2ms)
+  Rendered comments/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 31ms (Views: 20.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:22:13 +0530
+Served asset /screen.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:22:13 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:22:13 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:22:13 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:22:13 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:22:13 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:22:13 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:22:13 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 20:28:51 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."completed" = 't'[0m
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:28:51 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:28:51 +0530
+Served asset /screen-local.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:28:51 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:28:51 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:28:51 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:28:51 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:28:51 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:28:51 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/feedbacks/new?id=5" for 127.0.0.1 at 2012-07-18 20:28:54 +0530
+Processing by FeedbacksController#new as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."category_id" = 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "answers".* FROM "answers" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "answers".* FROM "answers" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "answers".* FROM "answers" 
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = 2[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "answers".* FROM "answers" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "answers".* FROM "answers" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "answers".* FROM "answers" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "answers".* FROM "answers" [0m
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."category_id" = 3
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = 4[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "answers".* FROM "answers" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "answers".* FROM "answers" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "answers".* FROM "answers" 
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = 5[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "answers".* FROM "answers" 
+  Rendered feedbacks/_questions.html.erb (158.5ms)
+  Rendered feedbacks/_form.html.erb (169.2ms)
+  Rendered feedbacks/new.html.erb within layouts/application (171.3ms)
+Completed 200 OK in 255ms (Views: 237.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:28:54 +0530
+Served asset /screen.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:28:54 +0530
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:28:54 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:28:54 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:28:54 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:28:54 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:28:54 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:28:54 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 20:29:20 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 20:29:20 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 20:29:20 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 20:29:20 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 20:29:20 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 20:29:20 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 20:29:20 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 20:29:20 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 20:29:20 +0530
+Served asset /university_sydney_logo.gif - 304 Not Modified (0ms)

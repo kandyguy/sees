@@ -14,7 +14,14 @@
 	    	<td><%= student.full_name %></td>
 	    	<td><%= format_date(student.created_at) %></td>
 	    	<td>Submitted</td>
-	    	<td><%= link_to "view", new_comment_path(:id => student.id) %></td>
+	    	<td>
+	    		<% if current_user.admin?%>
+	    		 <%= link_to "view", new_comment_path(:id => student.id) %>
+	    		<%end%>
+	    		<% if current_user.principal?%>
+	    		 <%= link_to "Feedback", new_feedback_path(:id => student.id) %>
+	    		<%end%>
+	    	</td>
 	    </tr>
 	    <% end %>			
 	</table>

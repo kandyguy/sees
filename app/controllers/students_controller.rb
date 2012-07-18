@@ -1,17 +1,8 @@
 require 'fileutils'
 class StudentsController < ApplicationController
   before_filter :authenticate_user!, :except => [:new, :create, :submit]
-  # GET /students
-  # GET /students.json
-  def index
-    @students = Student.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render :json => @students }
-    end
-  end
-
+  before_filter :cannot_create_application_for_already_created, :only => [:new, :create]
+  
   # GET /students/1
   # GET /students/1.json
   def show
@@ -37,11 +28,11 @@ class StudentsController < ApplicationController
   # POST /students
   # POST /students.json
   def create
-    if verify_recaptcha
+    #if verify_recaptcha
       @student = Student.new(params[:student])
       if @student.save
-        3.times do |i|
-          unless params["file"]["#{i}"].nil?
+        Student.number_of_files.to_i.times do |i|
+          unless params["file"].nil? || params["file"]["#{i}"].nil?
             tmp = params["file"]["#{i}"].tempfile
             file_name = params["file"]["#{i}"].original_filename
             file = File.join("public/data", "#{file_name}#{@student.id}")
@@ -54,9 +45,9 @@ class StudentsController < ApplicationController
       else
         render :action => "new" 
       end
-    else
-      redirect_to new_student_path, :alert => 'Invalid captcha' 
-    end  
+    #else
+    #  redirect_to new_student_path, :alert => 'Invalid captcha' 
+    #end  
   end
 
   # PUT /students/1
@@ -88,7 +79,11 @@ class StudentsController < ApplicationController
   end
   
   def submit
-    p "hoooooooo hoooooooooooooo"
+    
+  end
+  
+  def cannot_create_application_for_already_created
+    #FIXME: do not allow the new action for already logged users 
   end
   
 end

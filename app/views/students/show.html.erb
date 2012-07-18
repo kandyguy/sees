@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<% unless @student.vaidate_required_field? %>
+<h3>Application not yet completed..</h3>
+<% end %>
 <p>
 	<b>User:</b>
 	<%= @student.try(:user).try(:email) %>
@@ -124,25 +126,10 @@
 </p>
 
 <p>
-  <b>Declaration2:</b>
-  <%= @student.declaration2 %>
-</p>
-
-<p>
-  <b>Declaration3:</b>
-  <%= @student.declaration3 %>
-</p>
-
-<p>
-  <b>Declaration4:</b>
-  <%= @student.declaration4 %>
-</p>
-
-<p>
   <b>Completed:</b>
   <%= @student.completed %>
 </p>
+<% unless @student.vaidate_required_field? %>
+ <%= link_to 'Edit', edit_student_path(@student) %>
+<% end %>
 
-
-<%= link_to 'Edit', edit_student_path(@student) %> |
-<%= link_to 'Back', students_path %>

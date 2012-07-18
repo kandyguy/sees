@@ -10,9 +10,10 @@ class Student < ActiveRecord::Base
                   
   belongs_to :user
   validates_associated :user   
-  validates :email, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i}, :allow_blank => true
-  validates :email_confirmation, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i}, :allow_blank => Proc.new { |a| a.email.blank?} 
-  validates_confirmation_of :email
+  
+  #validates :email, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i}, :allow_blank => true
+  #validates :email_confirmation, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i}, :allow_blank => Proc.new { |a| a.email.blank?} 
+  #validates_confirmation_of :email
   
   belongs_to :state
   belongs_to :school
@@ -60,6 +61,10 @@ class Student < ActiveRecord::Base
   
   def full_name
     "#{last_name}, #{first_name}"
+  end
+  
+  def self.logged_in_student(user_id)
+    Student.find_by_user_id(user_id)
   end
   
 end

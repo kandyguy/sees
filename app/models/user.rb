@@ -11,4 +11,18 @@ class User < ActiveRecord::Base
   
   has_many :users
   
+  def student?
+    user_type == "STUDENT"
+  end
+  
+  def principal?
+    user_type == "PRINCIPAL"
+  end
+  
+  def admin?
+    user_type == "ADMIN"
+  end
+  
+  
+  
 end

@@ -13,10 +13,14 @@
       <div id="w2">
         <div id="w3">
           <div id="head">
+          	<div style="float: right;">
+          		<%if user_signed_in? %>
+              		<%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
+            	<% end %>
+          	</div>
             <div id="masthead">
               <a href="#content" class="skip-nav">Skip to main content</a>
               <h1><a id="logo" href="http://sydney.edu.au/">The University of Sydney</a> <span id="separator">-</span> <span id="tag-line">Sydney Early Entry (E12) Scheme</span></h1>
-              
             </div>
             <!-- <ul id="nav-global">
               use the "active" class to define the currently active item (highlighted text and nav indicator) 
@@ -26,6 +30,9 @@
           </div>
           <div id="mid" class="clearfix">
             <div id="content">
+              <%- flash.each do |name, msg| -%>
+		        <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+		      <%- end -%>	
               <div id="w4">
                 <%= yield %>
               </div>
@@ -47,9 +54,6 @@
           
         </div>
       </div>
-    <p style="color: green"><%= notice %></p>
-
-
-  <%= javascript_include_tag "application"%>
+	<%= javascript_include_tag "application"%>
   </body>
 </html>

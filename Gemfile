@@ -37,6 +37,7 @@ gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug'
+gem 'debugger'
 
 #authentication
 gem 'devise'
