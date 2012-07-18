@@ -27,6 +27,7 @@ class Student < ActiveRecord::Base
   before_create :update_user
   
   has_many :student_files
+  has_one :feedback
   
   scope :submitted_applications, lambda {
     {:conditions => {:completed => true}}
@@ -60,7 +61,7 @@ class Student < ActiveRecord::Base
   end
   
   def full_name
-    "#{last_name}, #{first_name}"
+    "#{last_name} #{first_name}"
   end
   
   def self.logged_in_student(user_id)

@@ -11,4 +11,8 @@ module FeedbacksHelper
     Answer.all
   end
   
+  def support_statues
+    ApplicationSupportStatus.all
+  end
+  
 end

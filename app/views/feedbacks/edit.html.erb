@@ -1,0 +1,22 @@
+<h3>
+	PRINCIPAL RECOMMANDATION FOR <%= @feedback.student.full_name.upcase %>
+</h3>
+<h3>
+	School Details
+</h3>
+<%= form_for(@feedback) do |f| %>
+  <div>
+  	<%= render :partial => 'questions'%>
+  	<%= f.hidden_field :answers %>
+  </div>
+  <div>
+  	<%= f.text_area :extra_note %>
+  	<%= f.check_box :read_confirmation %>I have read
+  	<%= f.radio_button :recommandation_level, "recommand" %> Recommand
+  	<%= f.radio_button :recommandation_level, "highly_recommand" %> Recommand
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+    <%= link_to "back", root_path %>
+  </div>
+<% end %>

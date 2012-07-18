@@ -15,6 +15,7 @@ class CommentsController < ApplicationController
   # GET /comments/new.json
   def new
     @comment = Comment.new
+    @student = Student.find(params[:id])
   end
 
   # GET /comments/1/edit

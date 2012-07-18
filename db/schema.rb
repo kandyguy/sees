@@ -11,12 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120718130122) do
+ActiveRecord::Schema.define(:version => 20120718163928) do
 
   create_table "answers", :force => true do |t|
     t.string   "answer_text"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "application_support_statuses", :force => true do |t|
+    t.string   "status"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "categories", :force => true do |t|
@@ -48,8 +54,14 @@ ActiveRecord::Schema.define(:version => 20120718130122) do
     t.integer  "user_id"
     t.integer  "school_id"
     t.string   "answers"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                                       :null => false
+    t.datetime "updated_at",                                       :null => false
+    t.boolean  "support_student",               :default => false
+    t.integer  "application_support_status_id"
+    t.text     "application_support_comment"
+    t.text     "extra_note"
+    t.boolean  "read_confirmation",             :default => false
+    t.string   "recommandation_level"
   end
 
   create_table "questions", :force => true do |t|

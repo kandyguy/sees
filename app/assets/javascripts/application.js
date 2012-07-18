@@ -15,7 +15,7 @@
 //= require_tree .
 $(document).ready(function() {
 	$("input:radio[type=radio]").click(function() {
-      $('#feedback_school_id').val($(this).attr('id'));
+      //$('#feedback_school_id').val($(this).attr('id'));
     });
     
     

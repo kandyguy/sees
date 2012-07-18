@@ -129,7 +129,5 @@
   <b>Completed:</b>
   <%= @student.completed %>
 </p>
-<% unless @student.vaidate_required_field? %>
- <%= link_to 'Edit', edit_student_path(@student) %>
-<% end %>
-
+<%= (link_to 'Edit', edit_student_path(@student)) unless @student.vaidate_required_field? %>
+<%= (link_to "back", root_path) unless current_user.student?  %>

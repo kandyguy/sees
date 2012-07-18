@@ -11,7 +11,7 @@
 	    <% @students.each do |student|  %>
 	    <tr>
 	    	<td><%= application_id(student.id) %></td>
-	    	<td><%= student.full_name %></td>
+	    	<td><%= link_to student.full_name, student_path(student) %></td>
 	    	<td><%= format_date(student.created_at) %></td>
 	    	<td>Submitted</td>
 	    	<td>

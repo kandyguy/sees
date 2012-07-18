@@ -1,5 +1,21 @@
-<h1>New feedback</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', feedbacks_path %>
+<h3>
+	DEMO: STUDENT DETAILS SHOULD COME HERE
+</h3>
+<%= form_for(@feedback) do |f| %>
+  <div class="field">
+    <%= f.hidden_field :student_id, :value => @student.try(:id) %>
+  	<%= f.hidden_field :user_id, :value => current_user.id %>
+  	<%= f.hidden_field :school_id, :value => @student.try(:school).try(:id) %>
+  </div>
+  <div>
+  	<%= f.select(:support_student, [['Yes', 1], ['No', 0]], {}) %><br />
+  	<% support_statues.each do |support_status| %>
+  	  <%= f.radio_button :application_support_status_id, support_status.id %><%= support_status.status %><br />
+  	<% end %>
+  	<%= f.text_area :application_support_comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+    <%= link_to "back", root_path %>
+  </div>
+<% end %>

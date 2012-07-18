@@ -56,8 +56,6 @@ Answer.create(:answer_text => 'strongly disagree')
 Answer.create(:answer_text => 'Not Applicable')
 
 
-#Adding question
-
 
 
 

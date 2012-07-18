@@ -13,7 +13,7 @@
 	  					<% answer_list.each do |answer| %>
 	  					  <%= radio_button_tag question.id, answer.id%><%= answer.answer_text%>
 	  					<% end %>
-	  					<%= text_field question.id, '' %>
+	  					<%= hidden_field question.id, '' %>
 	  				</td>
 	  			</tr>
 	  			<% end %>
