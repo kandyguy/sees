@@ -40243,3 +40243,276 @@ Connecting to database specified by database.yml
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.5ms)[0m  INSERT INTO "answers" ("answer_text", "created_at", "updated_at") VALUES (?, ?, ?)  [["answer_text", "Not Applicable"], ["created_at", Wed, 18 Jul 2012 12:48:20 UTC +00:00], ["updated_at", Wed, 18 Jul 2012 12:48:20 UTC +00:00]]
   [1m[36m (89.4ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20120716185600)
+Migrating to CreateStates (20120716192613)
+Migrating to CreateSchools (20120716193737)
+Migrating to CreateFaculties (20120716193808)
+Migrating to CreateCourses (20120716193839)
+Migrating to CreateStudents (20120716195011)
+Migrating to CreateCategories (20120717052514)
+Migrating to CreateQuestions (20120717055112)
+Migrating to CreateAnswers (20120717055822)
+Migrating to CreateComments (20120717092607)
+Migrating to CreateStudentFiles (20120717110242)
+Migrating to AddUserIdToComments (20120718093308)
+Migrating to CreateFeedbacks (20120718103516)
+Migrating to RemoveExtraDeclarations (20120718125725)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.3ms)[0m  CREATE TEMPORARY TABLE "altered_students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "date_of_birth" date, "parent_name" varchar(255), "parent_phone" varchar(255), "parent_mobile" varchar(255), "uac_number" varchar(255), "email" varchar(255), "confirm_email" varchar(255), "mobile" varchar(255), "phone" varchar(255), "address1" varchar(255), "address2" varchar(255), "suburb" varchar(255), "state_id" integer, "post_code" varchar(255), "school_id" integer, "faculty_id" integer, "course_id" integer, "note1" varchar(255), "note2" varchar(255), "note3" varchar(255), "declaration1" boolean, "declaration2" boolean, "declaration3" boolean, "declaration4" boolean, "completed" boolean DEFAULT 'f', "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("students")[0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "students"
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "students"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "date_of_birth" date, "parent_name" varchar(255), "parent_phone" varchar(255), "parent_mobile" varchar(255), "uac_number" varchar(255), "email" varchar(255), "confirm_email" varchar(255), "mobile" varchar(255), "phone" varchar(255), "address1" varchar(255), "address2" varchar(255), "suburb" varchar(255), "state_id" integer, "post_code" varchar(255), "school_id" integer, "faculty_id" integer, "course_id" integer, "note1" varchar(255), "note2" varchar(255), "note3" varchar(255), "declaration1" boolean, "declaration3" boolean, "declaration4" boolean, "completed" boolean DEFAULT 'f', "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_students")[0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "altered_students"
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "altered_students"[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "altered_students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "date_of_birth" date, "parent_name" varchar(255), "parent_phone" varchar(255), "parent_mobile" varchar(255), "uac_number" varchar(255), "email" varchar(255), "confirm_email" varchar(255), "mobile" varchar(255), "phone" varchar(255), "address1" varchar(255), "address2" varchar(255), "suburb" varchar(255), "state_id" integer, "post_code" varchar(255), "school_id" integer, "faculty_id" integer, "course_id" integer, "note1" varchar(255), "note2" varchar(255), "note3" varchar(255), "declaration1" boolean, "declaration3" boolean, "declaration4" boolean, "completed" boolean DEFAULT 'f', "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("students")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "students"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "students"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "date_of_birth" date, "parent_name" varchar(255), "parent_phone" varchar(255), "parent_mobile" varchar(255), "uac_number" varchar(255), "email" varchar(255), "confirm_email" varchar(255), "mobile" varchar(255), "phone" varchar(255), "address1" varchar(255), "address2" varchar(255), "suburb" varchar(255), "state_id" integer, "post_code" varchar(255), "school_id" integer, "faculty_id" integer, "course_id" integer, "note1" varchar(255), "note2" varchar(255), "note3" varchar(255), "declaration1" boolean, "declaration4" boolean, "completed" boolean DEFAULT 'f', "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_students")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "altered_students"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "altered_students"[0m
+  [1m[35m (0.2ms)[0m  CREATE TEMPORARY TABLE "altered_students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "date_of_birth" date, "parent_name" varchar(255), "parent_phone" varchar(255), "parent_mobile" varchar(255), "uac_number" varchar(255), "email" varchar(255), "confirm_email" varchar(255), "mobile" varchar(255), "phone" varchar(255), "address1" varchar(255), "address2" varchar(255), "suburb" varchar(255), "state_id" integer, "post_code" varchar(255), "school_id" integer, "faculty_id" integer, "course_id" integer, "note1" varchar(255), "note2" varchar(255), "note3" varchar(255), "declaration1" boolean, "declaration4" boolean, "completed" boolean DEFAULT 'f', "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("students")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "students"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "students"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "date_of_birth" date, "parent_name" varchar(255), "parent_phone" varchar(255), "parent_mobile" varchar(255), "uac_number" varchar(255), "email" varchar(255), "confirm_email" varchar(255), "mobile" varchar(255), "phone" varchar(255), "address1" varchar(255), "address2" varchar(255), "suburb" varchar(255), "state_id" integer, "post_code" varchar(255), "school_id" integer, "faculty_id" integer, "course_id" integer, "note1" varchar(255), "note2" varchar(255), "note3" varchar(255), "declaration1" boolean, "completed" boolean DEFAULT 'f', "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_students")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "altered_students"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "altered_students"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120718125725')
+  [1m[36m (139.8ms)[0m  [1mcommit transaction[0m
+Migrating to AddStudentAcceptance (20120718130122)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "students" ADD "acceptance" integer DEFAULT 0[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120718130122')
+  [1m[36m (86.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("answers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("categories")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("comments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("faculties")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("feedbacks")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("questions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schools")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("states")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("student_files")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("students")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 18:33:06 +0530
+Processing by StudentsController#new as HTML
+  [1m[36mState Load (0.1ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (98.5ms)
+  Rendered students/new.html.erb within layouts/application (166.5ms)
+Completed 200 OK in 450ms (Views: 274.8ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 18:33:07 +0530
+Served asset /screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 18:33:07 +0530
+Served asset /screen-local.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 18:33:07 +0530
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 18:33:07 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 18:33:07 +0530
+Served asset /feedbacks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 18:33:07 +0530
+Served asset /application.js - 304 Not Modified (47ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 18:33:22 +0530
+Processing by StudentsController#new as HTML
+  [1m[35mState Load (0.2ms)[0m  SELECT "states".* FROM "states" 
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools" [0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered students/_form.html.erb (11.2ms)
+  Rendered students/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 18:33:23 +0530
+Served asset /screen.css - 200 OK (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 18:33:23 +0530
+Served asset /screen-local.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 18:33:23 +0530
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 18:33:23 +0530
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 18:33:23 +0530
+Served asset /feedbacks.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 18:33:23 +0530
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 18:33:23 +0530
+Served asset /featured-links.css - 200 OK (3ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 18:33:47 +0530
+Processing by StudentsController#new as HTML
+  [1m[36mState Load (0.1ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (84.9ms)
+  Rendered students/new.html.erb within layouts/application (85.5ms)
+Completed 200 OK in 124ms (Views: 92.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 18:33:47 +0530
+Served asset /screen.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 18:33:47 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 18:33:47 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 18:33:47 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 18:33:47 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 18:33:47 +0530
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 18:33:47 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 18:33:48 +0530
+Served asset /university_sydney_logo.gif - 200 OK (2ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 18:35:17 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WKQx6EXyJESWaU7gJy5b5W99HaWaKGtguCPBCQIiBRM=", "student"=>{"title"=>"mr", "first_name"=>"kasuni", "last_name"=>"sarathchandra", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"sameera", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"", "email_confirmation"=>"", "mobile"=>"", "phone"=>"", "address1"=>"address", "address2"=>"", "suburb"=>"suberb", "state_id"=>"1", "post_code"=>"", "login_email"=>"sameera207@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "recaptcha_challenge_field"=>"03AHJ_Vus8YxXRgpOXzID2g2l0NKlFVFhkTIwRP3P3PRslYZxGjBuap-Y3nLNSMxbRjmyzcLqxyJgalOJx6F-4Ergi-LhNeKGhN1ucMHXAty3SaeFLCk6MSrKa9uKNMhrcKfs7pTHA_f5II9Kt49y91G4PgXb98eslBQ", "recaptcha_response_field"=>"instantly deenlos", "commit"=>"Save"}
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 10302ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 18:35:27 +0530
+Processing by StudentsController#new as HTML
+  [1m[35mState Load (0.2ms)[0m  SELECT "states".* FROM "states" 
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools" [0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered students/_form.html.erb (50.9ms)
+  Rendered students/new.html.erb within layouts/application (51.7ms)
+Completed 200 OK in 59ms (Views: 58.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 18:35:28 +0530
+Served asset /screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 18:35:28 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 18:35:28 +0530
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 18:35:28 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 18:35:28 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 18:35:28 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 18:35:28 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-07-18 18:38:01 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WKQx6EXyJESWaU7gJy5b5W99HaWaKGtguCPBCQIiBRM=", "student"=>{"title"=>"mr", "first_name"=>"kasuni", "last_name"=>"sarathchandra", "date_of_birth(1i)"=>"2012", "date_of_birth(2i)"=>"7", "date_of_birth(3i)"=>"18", "parent_name"=>"sameera", "parent_phone"=>"", "parent_mobile"=>"", "uac_number"=>"", "email"=>"", "email_confirmation"=>"", "mobile"=>"", "phone"=>"", "address1"=>"address", "address2"=>"", "suburb"=>"suberb", "state_id"=>"1", "post_code"=>"", "login_email"=>"sameera207@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "school_id"=>"1", "course_id"=>"1", "note1"=>"", "note2"=>"", "note3"=>"", "declaration1"=>"0"}, "picture"=>"", "file"=>{"0"=>#<ActionDispatch::Http::UploadedFile:0x000000015b9888 @original_filename="5010_changes", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file[0]\"; filename=\"5010_changes\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20120718-14621-en1r2n>>}, "recaptcha_challenge_field"=>"03AHJ_VusA61RCquwoiv9jXFINQrYLlpIog5PiakonS546_ABHDiQrDs8UDM-MdbjK9CM62Yytv6fzN5J4d6eWWZvYwZkzI39zUtGn8JXBRRdC5W8XOcpmflYnHKlewm5nBvgYUaOkyPI8E7LQa7L5K1K-p7gR1WrHjinyEYlpPiyngecbowAqJYQ", "recaptcha_response_field"=>"accompanied msnalys", "commit"=>"Save"}
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 5101ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-07-18 18:38:06 +0530
+Processing by StudentsController#new as HTML
+  [1m[36mState Load (0.2ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.2ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered students/_form.html.erb (50.2ms)
+  Rendered students/new.html.erb within layouts/application (50.8ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 18:38:06 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 18:38:06 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 18:38:06 +0530
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 18:38:06 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 18:38:06 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/feedbacks.js?body=1" for 127.0.0.1 at 2012-07-18 18:38:06 +0530
+Served asset /feedbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 18:38:06 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)

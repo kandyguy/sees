@@ -37,7 +37,7 @@ class StudentsController < ApplicationController
   # POST /students
   # POST /students.json
   def create
-    #if verify_recaptcha
+    if verify_recaptcha
       @student = Student.new(params[:student])
       if @student.save
         3.times do |i|
@@ -54,9 +54,9 @@ class StudentsController < ApplicationController
       else
         render :action => "new" 
       end
-    #else
-    #  redirect_to new_student_path, :alert => 'Invalid captcha' 
-    #end  
+    else
+      redirect_to new_student_path, :alert => 'Invalid captcha' 
+    end  
   end
 
   # PUT /students/1
