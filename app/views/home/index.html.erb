@@ -14,7 +14,7 @@
 	    	<td><%= student.full_name %></td>
 	    	<td><%= format_date(student.created_at) %></td>
 	    	<td>Submitted</td>
-	    	<td><%= link_to "view", student_path(student) %></td>
+	    	<td><%= link_to "view", new_comment_path(:id => student.id) %></td>
 	    </tr>
 	    <% end %>			
 	</table>

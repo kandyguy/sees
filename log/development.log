@@ -29737,3 +29737,1316 @@ ActionController::RoutingError (No route matches [GET] "/images/common/universit
 
 
   Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (10.2ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20120716185600)
+Migrating to CreateStates (20120716192613)
+Migrating to CreateSchools (20120716193737)
+Migrating to CreateFaculties (20120716193808)
+Migrating to CreateCourses (20120716193839)
+Migrating to CreateStudents (20120716195011)
+Migrating to CreateCategories (20120717052514)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "category_name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120717052514')[0m
+  [1m[35m (71.6ms)[0m  commit transaction
+Migrating to CreateQuestions (20120717055112)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.2ms)[0m  CREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "category_id" integer, "question_text" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120717055112')[0m
+  [1m[35m (113.0ms)[0m  commit transaction
+Migrating to CreateAnswers (20120717055822)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.1ms)[0m  CREATE TABLE "answers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "answer_text" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120717055822')[0m
+  [1m[35m (89.0ms)[0m  commit transaction
+Migrating to CreateComments (20120717092607)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.5ms)[0m  CREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "student_id" integer, "comment_text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120717092607')[0m
+  [1m[35m (84.2ms)[0m  commit transaction
+Migrating to CreateStudentFiles (20120717110242)
+Migrating to AddUserIdToComments (20120718093308)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "comments" ADD "user_id" integer
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120718093308')[0m
+  [1m[35m (88.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("answers")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("categories")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("comments")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("courses")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("faculties")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("questions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schools")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("states")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("student_files")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("students")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/students/new" for 127.0.0.1 at Wed Jul 18 15:06:21 +0530 2012
+Processing by StudentsController#new as HTML
+  [1m[36mState Load (0.1ms)[0m  [1mSELECT "states".* FROM "states" [0m
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools" 
+  [1m[36mFaculty Load (0.1ms)[0m  [1mSELECT "faculties".* FROM "faculties" [0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered students/_form.html.erb (306.0ms)
+  Rendered students/new.html.erb within layouts/application (311.2ms)
+Completed 200 OK in 441ms (Views: 383.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at Wed Jul 18 15:06:22 +0530 2012
+Served asset /screen.css - 200 OK (4ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at Wed Jul 18 15:06:22 +0530 2012
+Served asset /screen-local.css - 200 OK (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at Wed Jul 18 15:06:22 +0530 2012
+Served asset /featured-links.css - 200 OK (17ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at Wed Jul 18 15:06:22 +0530 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.6) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.6) lib/rails/commands.rb:55
+  railties (3.2.6) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.6) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 18 15:06:25 +0530 2012
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 44ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Wed Jul 18 15:06:25 +0530 2012
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 24ms (Views: 8.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at Wed Jul 18 15:06:25 +0530 2012
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at Wed Jul 18 15:06:25 +0530 2012
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at Wed Jul 18 15:06:25 +0530 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.6) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.6) lib/rails/commands.rb:55
+  railties (3.2.6) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.6) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Wed Jul 18 15:06:41 +0530 2012
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"sameera207@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login", "authenticity_token"=>"G6XaiWViBuY1pjqJ22ZQPtPThrYliztclnLMjYkJpYY=", "utf8"=>"✓"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'sameera207@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.2ms)[0m  [1mUPDATE "users" SET "updated_at" = '2012-07-18 09:36:41.548032', "last_sign_in_at" = '2012-07-18 06:46:25.058310', "current_sign_in_at" = '2012-07-18 09:36:41.546151', "sign_in_count" = 3 WHERE "users"."id" = 4[0m
+  [1m[35m (97.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 277ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 18 15:06:41 +0530 2012
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at Wed Jul 18 15:06:41 +0530 2012
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at Wed Jul 18 15:06:41 +0530 2012
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at Wed Jul 18 15:06:41 +0530 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.6) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.6) lib/rails/commands.rb:55
+  railties (3.2.6) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.6) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/comments/new?id=1" for 127.0.0.1 at Wed Jul 18 15:06:45 +0530 2012
+
+SyntaxError (/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:9: syntax error, unexpected ':', expecting '}'
+      format.json { render json: @comments }
+                                ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:20: syntax error, unexpected ':', expecting '}'
+      format.json { render json: @comment }
+                                ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:31: syntax error, unexpected ':', expecting '}'
+      format.json { render json: @comment }
+                                ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:47: syntax error, unexpected ':', expecting '}'
+... redirect_to @comment, notice: 'Comment was successfully cre...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:48: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @comment, status: :created, l...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:48: syntax error, unexpected ':', expecting '='
+...render json: @comment, status: :created, location: @comment ...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:50: syntax error, unexpected ':', expecting '}'
+        format.html { render action: "new" }
+                                    ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:51: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @comment.errors, status: :unp...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:51: syntax error, unexpected ':', expecting '='
+...json: @comment.errors, status: :unprocessable_entity }
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:63: syntax error, unexpected ':', expecting '}'
+... redirect_to @comment, notice: 'Comment was successfully upd...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:66: syntax error, unexpected ':', expecting '}'
+        format.html { render action: "edit" }
+                                    ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:67: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @comment.errors, status: :unp...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:67: syntax error, unexpected ':', expecting '='
+...json: @comment.errors, status: :unprocessable_entity }
+                              ^):
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:192:in `const_missing'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:218:in `constantize'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:217:in `each'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:217:in `constantize'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__1135971943__call__4__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.6) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.6) lib/rails/commands.rb:55
+  railties (3.2.6) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.6) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.8ms)
+
+
+Started GET "/comments/new?id=1" for 127.0.0.1 at Wed Jul 18 15:07:13 +0530 2012
+
+SyntaxError (/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:15: syntax error, unexpected ':', expecting '}'
+      format.json { render json: @comment }
+                                ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:26: syntax error, unexpected ':', expecting '}'
+      format.json { render json: @comment }
+                                ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:42: syntax error, unexpected ':', expecting '}'
+... redirect_to @comment, notice: 'Comment was successfully cre...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:43: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @comment, status: :created, l...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:43: syntax error, unexpected ':', expecting '='
+...render json: @comment, status: :created, location: @comment ...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:45: syntax error, unexpected ':', expecting '}'
+        format.html { render action: "new" }
+                                    ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:46: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @comment.errors, status: :unp...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:46: syntax error, unexpected ':', expecting '='
+...json: @comment.errors, status: :unprocessable_entity }
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:58: syntax error, unexpected ':', expecting '}'
+... redirect_to @comment, notice: 'Comment was successfully upd...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:61: syntax error, unexpected ':', expecting '}'
+        format.html { render action: "edit" }
+                                    ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:62: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @comment.errors, status: :unp...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:62: syntax error, unexpected ':', expecting '='
+...json: @comment.errors, status: :unprocessable_entity }
+                              ^):
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:192:in `const_missing'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:218:in `constantize'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:217:in `each'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:217:in `constantize'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__1135971943__call__4__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.6) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.6) lib/rails/commands.rb:55
+  railties (3.2.6) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.6) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/comments/new?id=1" for 127.0.0.1 at Wed Jul 18 15:07:31 +0530 2012
+
+SyntaxError (/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:15: syntax error, unexpected ':', expecting '}'
+      format.json { render json: @comment }
+                                ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:37: syntax error, unexpected ':', expecting '}'
+... redirect_to @comment, notice: 'Comment was successfully cre...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:38: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @comment, status: :created, l...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:38: syntax error, unexpected ':', expecting '='
+...render json: @comment, status: :created, location: @comment ...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:40: syntax error, unexpected ':', expecting '}'
+        format.html { render action: "new" }
+                                    ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:41: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @comment.errors, status: :unp...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:41: syntax error, unexpected ':', expecting '='
+...json: @comment.errors, status: :unprocessable_entity }
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:53: syntax error, unexpected ':', expecting '}'
+... redirect_to @comment, notice: 'Comment was successfully upd...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:56: syntax error, unexpected ':', expecting '}'
+        format.html { render action: "edit" }
+                                    ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:57: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @comment.errors, status: :unp...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:57: syntax error, unexpected ':', expecting '='
+...json: @comment.errors, status: :unprocessable_entity }
+                              ^):
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:192:in `const_missing'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:218:in `constantize'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:217:in `each'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:217:in `constantize'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__1135971943__call__4__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.6) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.6) lib/rails/commands.rb:55
+  railties (3.2.6) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.6) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/comments/new?id=1" for 127.0.0.1 at Wed Jul 18 15:08:13 +0530 2012
+
+SyntaxError (/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:32: syntax error, unexpected ':', expecting '}'
+... redirect_to @comment, notice: 'Comment was successfully cre...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:33: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @comment, status: :created, l...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:33: syntax error, unexpected ':', expecting '='
+...render json: @comment, status: :created, location: @comment ...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:35: syntax error, unexpected ':', expecting '}'
+        format.html { render action: "new" }
+                                    ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:36: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @comment.errors, status: :unp...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:36: syntax error, unexpected ':', expecting '='
+...json: @comment.errors, status: :unprocessable_entity }
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:48: syntax error, unexpected ':', expecting '}'
+... redirect_to @comment, notice: 'Comment was successfully upd...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:51: syntax error, unexpected ':', expecting '}'
+        format.html { render action: "edit" }
+                                    ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:52: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @comment.errors, status: :unp...
+                              ^
+/home/sameera/workspace/allion/sees/app/controllers/comments_controller.rb:52: syntax error, unexpected ':', expecting '='
+...json: @comment.errors, status: :unprocessable_entity }
+                              ^):
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:192:in `const_missing'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:218:in `constantize'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:217:in `each'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:217:in `constantize'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__1135971943__call__4__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/sameera/.rvm/rubies/ruby-1.8.7-p357/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.6) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.6) lib/rails/commands.rb:55
+  railties (3.2.6) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.6) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.8.7-p357/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/comments/new?id=1" for 127.0.0.1 at 2012-07-18 15:09:50 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  Rendered comments/_form.html.erb (60.1ms)
+  Rendered comments/new.html.erb within layouts/application (124.2ms)
+Completed 200 OK in 537ms (Views: 223.9ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 15:09:51 +0530
+Served asset /screen.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 15:09:51 +0530
+Served asset /screen-local.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 15:09:51 +0530
+Served asset /featured-links.css - 304 Not Modified (2ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 15:09:51 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/comments/new?id=1" for 127.0.0.1 at 2012-07-18 15:10:06 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  Rendered comments/_form.html.erb (38.4ms)
+  Rendered comments/new.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:06 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:06 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 15:10:06 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 15:10:06 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/comments/new?id=1" for 127.0.0.1 at 2012-07-18 15:10:09 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  Rendered comments/_form.html.erb (2.8ms)
+  Rendered comments/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:09 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:09 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 15:10:09 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 15:10:09 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/comments/new?id=1" for 127.0.0.1 at 2012-07-18 15:10:12 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  Rendered comments/_form.html.erb (3.0ms)
+  Rendered comments/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:12 +0530
+Served asset /screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:12 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 15:10:12 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 15:10:12 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 15:10:15 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (194.5ms)
+Completed 500 Internal Server Error in 209ms
+
+ActionView::Template::Error (undefined method `new_comments_path' for #<#<Class:0x007fd348210e30>:0x007fd34820e1f8>):
+    14: 	    	<td><%= student.full_name %></td>
+    15: 	    	<td><%= format_date(student.created_at) %></td>
+    16: 	    	<td>Submitted</td>
+    17: 	    	<td><%= link_to "view", new_comments_path(:id => student.id) %></td>
+    18: 	    </tr>
+    19: 	    <% end %>			
+    20: 	</table>
+  app/views/home/index.html.erb:17:in `block in _app_views_home_index_html_erb___3106113202216265359_70272712509180'
+  app/views/home/index.html.erb:11:in `_app_views_home_index_html_erb___3106113202216265359_70272712509180'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 15:10:25 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:25 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:25 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 15:10:25 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 15:10:25 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/comments/new?id=1" for 127.0.0.1 at 2012-07-18 15:10:27 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  Rendered comments/_form.html.erb (3.0ms)
+  Rendered comments/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:27 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:27 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 15:10:27 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 15:10:27 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/comments/new?id=4" for 127.0.0.1 at 2012-07-18 15:10:29 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  Rendered comments/_form.html.erb (2.8ms)
+  Rendered comments/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:29 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:29 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 15:10:29 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 15:10:30 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 15:10:48 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" WHERE "students"."completed" = 't'
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:48 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:48 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 15:10:48 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 15:10:48 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/comments/new?id=1" for 127.0.0.1 at 2012-07-18 15:10:52 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  Rendered comments/_form.html.erb (2.9ms)
+  Rendered comments/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:52 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 15:10:52 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 15:10:52 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 15:10:52 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/comments/new?id=1" for 127.0.0.1 at 2012-07-18 15:14:10 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  Rendered comments/_form.html.erb (3.7ms)
+  Rendered comments/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 15:14:10 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 15:14:10 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 15:14:10 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 15:14:10 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/comments/new?id=4" for 127.0.0.1 at 2012-07-18 15:14:12 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  Rendered comments/_form.html.erb (2.9ms)
+  Rendered comments/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 15:14:13 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 15:14:13 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 15:14:13 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 15:14:13 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/comments/new?id=1" for 127.0.0.1 at 2012-07-18 15:14:26 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  Rendered comments/_form.html.erb (2.9ms)
+  Rendered comments/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-07-18 15:14:26 +0530
+Served asset /screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/screen-local.css?body=1" for 127.0.0.1 at 2012-07-18 15:14:26 +0530
+Served asset /screen-local.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/featured-links.css" for 127.0.0.1 at 2012-07-18 15:14:26 +0530
+Served asset /featured-links.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/common/university_sydney_logo.gif" for 127.0.0.1 at 2012-07-18 15:14:26 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/common/university_sydney_logo.gif"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/sameera/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/sameera/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
