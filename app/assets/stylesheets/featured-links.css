@@ -1,0 +1,14 @@
+/* USWT build v3.2.0 - featured-links.css - 2011-06-08 12:01:08 EST - !!! DO NOT MODIFY !!! Make modifications in *-local.css */
+@charset 'utf-8';
+a#swimmer.featured-link {
+	background-image:url(../images/content/featured_links/swimmer.jpg);
+}
+a#fabric.featured-link {
+	background-image:url(../images/content/featured_links/fabric.jpg);
+}
+a#face_girl.featured-link {
+	background-image:url(../images/content/featured_links/face_girl.jpg);
+}
+a#woman_playing_flute.featured-link {
+	background-image:url(../images/content/featured_links/woman_playing_flute.jpg);
+}

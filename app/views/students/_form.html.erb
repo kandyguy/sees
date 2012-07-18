@@ -1,4 +1,43 @@
-<%= form_for(@student, :html => {:multipart => true})  do |f| %>
+<%= form_for(@student, :html => {:multipart => true, :class => "formbuilder"})  do |f| %>
+<fieldset><legend>Student Details</legend>
+	<div class="fltleft column">
+		<ol>
+			<li>
+				<label>Title <em>*</em></label>
+				<%= select(:student, :title, [['Mr', 'mr'], ['Mrs', 'mrs']], {}, :class => "span1") %>
+			</li>
+			<li>
+				<label>First Name <em>*</em></label>
+    			<%= f.text_field :first_name %>
+			</li>
+			<li>
+				<label>Last Name <em>*</em></label>
+				<%= f.text_field :last_name %>
+			</li>
+			<li>
+				<label>Date of birth <em>*</em></label>
+				<%= f.date_select :date_of_birth %>
+			</li>
+		</ol>
+		<div class="column fltleft">
+			<ol>
+				<li>
+					<label>Parent or carers name <em>*</em></label>
+					<%= f.text_field :parent_name %>
+				</li>
+				<li>
+					<label>Parent or carers phone <em>*</em></label>
+					<%= f.text_field :parent_phone %>
+				</li>
+				<li>
+					<label>Parent or carers mobile <em>*</em></label>
+					<%= f.text_field :parent_mobile %>
+				</li>
+			</ol>
+		</div>
+	</div>
+</fieldset>
+
 <table>
   <tr>
   	<td colspan="2">

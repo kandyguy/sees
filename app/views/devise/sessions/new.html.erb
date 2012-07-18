@@ -1,22 +1,29 @@
-<div id="login_desc">
-	Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.
-	Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.
-	Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.
-	<%= link_to "CREATE NEW APPLICATION", new_student_path, :class => 'btn_new_student' %>
-</div>
-<div id="login">
-		<h3>Update Existing Application</h3>	
-		<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-		  <div><%= f.label :email %><br />
-		  <%= f.email_field :email %></div>
-		
-		  <div><%= f.label :password %><br />
-		  <%= f.password_field :password %></div>
-		  <div><%= f.submit "Sign in", :class => "sign_in" %>
-		  	<%= render :partial => "devise/shared/links" %>
-		  </div>
-		<% end %>
-		
-				
-</div>
-
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => "formbuilder"}) do |f| %>
+  <div class="login_wrapper">
+    <div class="fltleft column">
+      <h1>Sydney Early Entry E12 Scheme</h1>
+      <p>The University of Sydney’s Social Inclusion Unit wishes to expand its special entry schemes and launch an early conditional offer scheme for student from low SES schools. This scheme would offer approximately 180 places to students who do not meet normal entry requirements through UAC .</p>
+      <%= link_to "Start New Application", new_student_path, :class => 'login-set-align submit-button button' %>	
+    </div>
+    <div class="fltleft">
+    	<fieldset><legend>Edit Current Application</legend>
+    	<ol>
+    		<li>
+    			<label>Email<em>*</em></label>
+    			<%= f.email_field :email %>
+    		</li>
+    		<li>
+    			<label>Password: <em>*</em></label>
+    			<%= f.password_field :password %>
+    		</li>
+    		<li class="buttons">
+    			<%= link_to "Forgot your password?", new_password_path(resource_name), :class => "login-set-align" %>
+    			<%= f.submit "Login", :class => "login-set-align submit-button button" %>
+    		</li>
+    	</ol>
+    	</fieldset>
+    </div>
+    <div class="clr"></div>
+  </div>
+<div class="clr"></div>    
+<% end %>

@@ -1,0 +1,6 @@
+/* USWT build v3.2.0 - screen-local.css - 2011-06-08 12:01:08 EST - !!! DO NOT MODIFY !!! Make modifications in *-local.css */
+@charset "utf-8";
+@import url(featured-links.css);
+#splashpod {
+	background-image:url(../images/frontpage/brand-shot.jpg);
+}
