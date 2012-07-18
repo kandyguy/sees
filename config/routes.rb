@@ -1,4 +1,6 @@
 Sees::Application.routes.draw do
+  resources :feedbacks
+
   resources :comments
 
   resources :students do

@@ -13,3 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+$(document).ready(function() {
+	$("input:radio[type=radio]").click(function() {
+      $('#feedback_school_id').val($(this).attr('id'));
+    });
+    
+    
+	
+})
