@@ -1,10 +1,5 @@
-<h3>
-	PRINCIPAL RECOMMANDATION FOR <%= @feedback.student.full_name.upcase %>
-</h3>
-<h3>
-	School Details
-</h3>
-<%= form_for(@feedback) do |f| %>
+<h1>Principal's Supporting Application for  <%= @feedback.student.full_name.upcase %></h1>
+<%= form_for(@feedback, :html =>{:class => "formbuilder"}) do |f| %>
   <div>
   	<%= render :partial => 'questions'%>
   	<%= f.hidden_field :answers %>
@@ -16,7 +11,7 @@
   	<%= f.radio_button :recommandation_level, "highly_recommand" %> Recommand
   </div>
   <div class="actions">
-    <%= f.submit %>
-    <%= link_to "back", root_path %>
+    <%= f.submit 'Submit', :class => 'submit-button button'  %>
+    <%= link_to "back", root_path, :class => 'submit-button button' %>
   </div>
 <% end %>

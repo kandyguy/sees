@@ -1,28 +1,26 @@
-<div class="home">
-	<h3>Application List</h3>
-	<table id="submitted_applications">
-		<tr>
-			<th>Application Number</th>
-			<th>Student Name</th>
-			<th>Submission Date</th>
-			<th>Status</th>
-			<th></th>
-	    <tr>
-	    <% @students.each do |student|  %>
-	    <tr>
-	    	<td><%= application_id(student.id) %></td>
-	    	<td><%= link_to student.full_name, student_path(student) %></td>
-	    	<td><%= format_date(student.created_at) %></td>
-	    	<td>Submitted</td>
-	    	<td>
-	    		<% if current_user.admin?%>
-	    		 <%= link_to "view", new_comment_path(:id => student.id) %>
-	    		<%end%>
-	    		<% if current_user.principal?%>
-	    		 <%= link_to "Feedback", new_feedback_path(:id => student.id) %>
-	    		<%end%>
-	    	</td>
-	    </tr>
-	    <% end %>			
-	</table>
-</div>
+<h1>Application List</h1>
+<table width="99%" id="submitted_applications">
+  <tr>
+    <th>Application Number</th>
+    <th>Student Name</th>
+    <th>Submission Date</th>
+    <th>Status</th>
+    <th></th>
+  <tr>
+    <% @students.each do |student|  %>
+    <tr>
+      <td><%= application_id(student.id) %></td>
+      <td><%= link_to student.full_name, student_path(student) %></td>
+      <td><%= format_date(student.created_at) %></td>
+      <td>Submitted</td>
+      <td>
+        <% if current_user.admin?%>
+          <%= link_to "view", new_comment_path(:id => student.id) %>
+        <%end%>
+        <% if current_user.principal?%>
+          <%= link_to "Feedback", new_feedback_path(:id => student.id) %>
+        <%end%>
+      </td>
+    </tr>
+  <% end %>			
+</table>
